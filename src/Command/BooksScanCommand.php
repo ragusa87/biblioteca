@@ -10,6 +10,7 @@ use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
+use Symfony\Component\Console\Logger\ConsoleLogger;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Style\SymfonyStyle;
 
@@ -40,8 +41,9 @@ class BooksScanCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
+        $logger = new ConsoleLogger($output);
 
-        $io->writeln('Scanning books directory');
+        $io->writeln(sprintf('Scanning books directory: %s', $this->fileSystemManager->getBooksDirectory()));
 
         $files = $this->fileSystemManager->getAllBooksFiles();
         $progressBar = new ProgressBar($output, iterator_count($files));
@@ -65,6 +67,7 @@ class BooksScanCommand extends Command
                 $checksum = $this->fileSystemManager->getFileChecksum($file);
                 $book = $this->bookRepository->findOneBy(['checksum' => $checksum]);
                 if (null === $book) {
+                    $logger->debug('Creating book '.$file->getRealPath());
                     $book = $this->bookManager->createBook($file);
                     $flush = true;
                 } else {
@@ -81,8 +84,10 @@ class BooksScanCommand extends Command
                     $this->entityManager->flush();
                 }
             } catch (\Exception $e) {
-                $io->error('died during process of '.$file->getRealPath());
-                $io->error($e->getMessage());
+                $logger->warning('Exception while processing {file}', [
+                    'file' => $file->getRealPath(),
+                    'exception' => $e
+                ]);
                 throw $e;
             }
             $book = null;
