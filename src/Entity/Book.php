@@ -104,10 +104,18 @@ class Book
     #[ORM\Column(nullable: true)]
     private ?int $ageCategory = null;
 
+    /**
+     * @var Collection<int, KoboSyncedBook>
+     */
+    #[ORM\OneToMany(mappedBy: 'book', targetEntity: KoboSyncedBook::class, orphanRemoval: true)]
+    private Collection $koboSyncedBooks;
+
     public function __construct()
     {
         $this->bookInteractions = new ArrayCollection();
         $this->shelves = new ArrayCollection();
+        $this->uuid = $this->generateUuid();
+        $this->koboSyncedBooks = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -490,15 +498,42 @@ class Book
         return $this;
     }
 
-    /**
-     * @throws \Exception
-     */
     public function getUuid(): string
     {
-        if ($this->uuid === null) {
+        if ($this->uuid == null) {
             $this->uuid = $this->generateUuid();
         }
 
         return $this->uuid;
+    }
+
+    /**
+     * @return Collection<int, KoboSyncedBook>
+     */
+    public function getKoboSyncedBook(): Collection
+    {
+        return $this->koboSyncedBooks;
+    }
+
+    public function addKoboSyncedBook(KoboSyncedBook $koboSyncedBook): static
+    {
+        if (!$this->koboSyncedBooks->contains($koboSyncedBook)) {
+            $this->koboSyncedBooks->add($koboSyncedBook);
+            $koboSyncedBook->setBook($this);
+        }
+
+        return $this;
+    }
+
+    public function removeKoboSyncedBook(KoboSyncedBook $koboSyncedBook): static
+    {
+        if ($this->koboSyncedBooks->removeElement($koboSyncedBook)) {
+            // set the owning side to null (unless already changed)
+            if ($koboSyncedBook->getBook() === $this) {
+                $koboSyncedBook->setBook(null);
+            }
+        }
+
+        return $this;
     }
 }

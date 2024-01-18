@@ -77,10 +77,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(nullable: true)]
     private ?int $maxAgeCategory = null;
 
+    /**
+     * @var Collection<int, Kobo>
+     */
+    #[ORM\OneToMany(mappedBy: 'user', targetEntity: Kobo::class, orphanRemoval: true)]
+    private Collection $kobos;
+
     public function __construct()
     {
         $this->bookInteractions = new ArrayCollection();
         $this->shelves = new ArrayCollection();
+        $this->kobos = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -307,5 +314,13 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         $this->maxAgeCategory = $maxAgeCategory;
 
         return $this;
+    }
+
+    /**
+     * @return Collection<int,Kobo>
+     */
+    public function getKobos(): Collection
+    {
+        return $this->kobos;
     }
 }
