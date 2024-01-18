@@ -7,6 +7,7 @@
         "php": ">=8.1",
         "ext-ctype": "*",
         "ext-exif": "*",
+        "ext-gd": "*",
         "ext-iconv": "*",
         "ext-imagick": "*",
         "ext-zip": "*",
@@ -20,12 +21,14 @@
         "gedmo/doctrine-extensions": "^3.11",
         "gemorroj/archive7z": "^5.6",
         "google/apiclient": "^2.15",
+        "guzzle/guzzle": "^3.8",
         "kiwilan/php-ebook": "^2.0",
         "knplabs/knp-menu-bundle": "^3.2",
         "knplabs/knp-paginator-bundle": "^6.2",
         "liip/imagine-bundle": "^2.10",
         "phpdocumentor/reflection-docblock": "^5.3",
         "phpstan/phpdoc-parser": "^1.18",
+        "rtheunissen/guzzle-log-middleware": "^2.0",
         "scienta/doctrine-json-functions": "^5.3",
         "symandy/database-backup-bundle": "^0.4.0",
         "symfony/apache-pack": "^1.0",
@@ -48,6 +51,7 @@
         "symfony/process": "^6.2",
         "symfony/property-access": "^6.2",
         "symfony/property-info": "^6.2",
+        "symfony/psr-http-message-bridge": "^6.2",
         "symfony/runtime": "^6.2",
         "symfony/security-bundle": "^6.2",
         "symfony/serializer": "^6.2",
@@ -62,8 +66,7 @@
         "symfony/webpack-encore-bundle": "^2.0",
         "symfony/yaml": "^6.2",
         "twig/extra-bundle": "^2.12|^3.0",
-        "twig/twig": "^2.12|^3.0",
-         "ext-gd": "*"
+        "twig/twig": "^2.12|^3.0"
     },
     "config": {
         "allow-plugins": {
