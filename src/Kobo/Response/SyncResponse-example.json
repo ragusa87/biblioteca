@@ -1,0 +1,1594 @@
+[
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "Accessibility": "Full",
+        "ActivePeriod": {
+          "From": "2024-01-21T08:49:30Z"
+        },
+        "Created": "2024-01-21T08:48:04Z",
+        "CrossRevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "Id": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "IsRemoved": false,
+        "IsHiddenFromArchive": false,
+        "IsLocked": false,
+        "LastModified": "2024-01-21T08:48:04Z",
+        "OriginCategory": "Imported",
+        "RevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "Status": "Active"
+      },
+      "BookMetadata": {
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "CoverImageId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "CrossRevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "CurrentDisplayPrice": {
+          "CurrencyCode": "USD",
+          "TotalAmount": 0
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "Description": "<span><strong>Accelerate your organization to win in the marketplace.</strong><br>How can we apply technology to drive business value? For years, we've been told that the performance of software delivery teams doesn't matter―that it can't provide a competitive advantage to our companies. Through four years of groundbreaking research to include data collected from the State of DevOps reports conducted with Puppet, Dr. Nicole Forsgren, Jez Humble, and Gene Kim set out to find a way to measure software delivery performance―and what drives it―using rigorous statistical methods. This book presents both the findings and the science behind that research, making the information accessible for readers to apply in their own organizations.<br>Readers will discover how to measure the performance of their teams, and what capabilities they should invest in to drive higher performance. This book is ideal for management at every level.</span>",
+        "DownloadUrls": [
+          {
+            "Format": "EPUB3",
+            "Size": 6439105,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/47/epub",
+            "Platform": "Generic"
+          },
+          {
+            "Format": "EPUB",
+            "Size": 6439105,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/47/epub",
+            "Platform": "Generic"
+          }
+        ],
+        "EntitlementId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "ExternalIds": [],
+        "Genre": "00000000-0000-0000-0000-000000000001",
+        "IsEligibleForKoboLove": false,
+        "IsInternetArchive": false,
+        "IsPreOrder": false,
+        "IsSocialEnabled": true,
+        "Language": "en",
+        "PhoneticPronunciations": {},
+        "PublicationDate": "101-01-01T00:00:00Z",
+        "Publisher": {
+          "Imprint": "",
+          "Name": "IT Revolution Press"
+        },
+        "RevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "Title": "Accelerate",
+        "WorkId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "ContributorRoles": [
+          {
+            "Name": "Forsgren PhD"
+          }
+        ],
+        "Contributors": [
+          "Forsgren PhD"
+        ]
+      },
+      "ReadingState": {
+        "EntitlementId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+        "Created": "2024-01-21T08:48:04Z",
+        "LastModified": "2024-01-21T08:49:30Z",
+        "PriorityTimestamp": "2024-01-21T08:49:30Z",
+        "StatusInfo": {
+          "LastModified": "2024-01-21T08:49:30Z",
+          "Status": "ReadyToRead",
+          "TimesStartedReading": 0
+        },
+        "Statistics": {
+          "LastModified": "2024-01-21T08:49:30Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2024-01-21T08:49:30Z"
+        }
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Created": "2024-01-17T20:34:43Z",
+        "Id": "3eab8789-3e3d-4229-a4a8-6affe2597df6",
+        "Items": [
+          {
+            "RevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+            "Type": "ProductRevisionTagItem"
+          }
+        ],
+        "LastModified": "2024-01-21T08:48:30Z",
+        "Name": "myshelf",
+        "Type": "UserTag"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2023-05-28T10:12:43.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "20882d75-9baf-3583-b3cd-5834b2d1c528",
+        "RevisionId": "ec86fb45-1ea3-497f-aa3f-3669149265f2",
+        "IsHiddenFromArchive": false,
+        "Id": "5d3285c5-6405-44da-ab14-ad86fd0ebac1",
+        "Created": "2023-05-28T10:12:43.0000000Z",
+        "LastModified": "2023-05-28T10:12:43.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "5d3285c5-6405-44da-ab14-ad86fd0ebac1",
+        "Created": "2023-05-28T10:12:43.0000000Z",
+        "LastModified": "2024-01-21T08:14:42.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2024-01-21T08:14:26.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2023-05-28T13:22:55.0000000Z",
+          "LastTimeFinished": "2024-01-21T08:14:26.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2024-01-21T08:14:26.0000000Z",
+          "SpentReadingMinutes": 59,
+          "RemainingTimeMinutes": 419
+        },
+        "CurrentBookmark": {
+          "LastModified": "2024-01-21T08:14:26.0000000Z",
+          "ProgressPercent": 100,
+          "ContentSourceProgressPercent": 24,
+          "Location": {
+            "Value": "kobo.1.1",
+            "Type": "KoboSpan",
+            "Source": "ec86fb45-1ea3-497f-aa3f-3669149265f2!OPS!cover.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2024-01-21T08:14:26.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "20882d75-9baf-3583-b3cd-5834b2d1c528",
+        "RevisionId": "ec86fb45-1ea3-497f-aa3f-3669149265f2",
+        "Publisher": {
+          "Name": "Groupe Robert Laffont",
+          "Imprint": "Robert Laffont"
+        },
+        "PublicationDate": "2020-09-24T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782221139202",
+        "Genre": "1561e6f7-742f-4c1b-a804-187728814574",
+        "Slug": "dune-tome-2-le-messie-de-dune",
+        "CoverImageId": "85c9d050-d408-4dcf-9dc8-434fc0605b9f",
+        "IsSocialEnabled": true,
+        "WorkId": "20882d75-9baf-3583-b3cd-5834b2d1c528",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Frank Herbert"
+          },
+          {
+            "Name": "Michel Demuth"
+          },
+          {
+            "Name": "Laurent Genefort"
+          },
+          {
+            "Name": "Nicolas Martin"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "5d3285c5-6405-44da-ab14-ad86fd0ebac1",
+        "Title": "Dune - Tome 2 Le Messie de Dune",
+        "Description": "<p><strong>Le chef-d'œuvre absolu de la science-fiction, adapté au cinéma par Denis Villeneuve.</strong><br />Paul Atréides a triomphé de ses ennemis. En douze ans de guerre sainte, ses Fremen ont conquis l'univers. II est devenu l'empereur Muad'Dib. Presque un dieu, puisqu'il voit l'avenir. Ses ennemis, il les connaît. II sait quand et comment ils frapperont. Ils vont essayer de lui reprendre l'épice qui donne la prescience et peut-être de percer le secret de son pouvoir. Il peut déjouer le...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "1561e6f7-742f-4c1b-a804-187728814574",
+          "185d806f-2b4e-41b9-a0bb-03b3647751b6"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.EIwhBajqphXR5jB9ejr0PA.JuXjc6NyhNjG1SppnGPKF-ZS6VQdrugYa_t8RXVeP_O9OHzDkA_kZybXFGFXdiOybNHrR2Xz7D3sKMVoUsZrRhK1WaG1uUIarHl9iX3ZgMXXRsyp1s6SmQr-CKlC8Nl4tVoS-OuNzA0w1DU_luwOlQD-0A7DGV5guqz5iN95sITkl0KtPXdByGBI2E4H8uXLgwMQyj_pnYa_ZhpnI_CO7Bu152wbstUiXcmB6clrD4x5kR83OeaTeTqhyKbzVWieRPUECh4uKpXMqJT65KGOEKowwXx0DeLLngJFTFD-dWVY1f5WoIJw4ugWMXqMgduZHt5UNkYnryZPRFUQ_gQy6oNcwMfnBo3JOZ_EzF1wCmrR-YHMl5JBu7wSmabfCK0ms8IHGDUb7flccqRZYBMgqfKDhMzSyx6EnzR3CM8w7OLwWqe7t6jCsqt-Tv-g-XvS14iMe0Os94gTi0-zXwEZaEI-8qvN3uIGjSZfmH2imjp5hcBZnNWdP5ZMdwnlRWeOPVswO7t3lHo7cReaQJuuwQXzZU5Yj8ZSHUCjukcnarbM8qXEZuDos-c2T8BaaJMJPVLzlVwsH3Omj4A_1aX9drNMSN8weCmv1QslQKReQLK0SrFMa8WFqhNHAXLos6bC2wL6UDg4z-IpM8PnDVdvjUIOaB-IMp8RSp3iB8IwIzdoRKCvZNKg6t4QVs-HmHNv",
+            "Platform": "Generic",
+            "Size": 1541966
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.A5rJK3t-ntC-ECWkjJ68ew.fJNasQFa4phbmuIhZ7bcWQBCpm11bVHUS3fL8ES1YovLyyZLHG5elY0r4716Cpet24U7eWv6sReQbpTkqXjt8BdTijoc5oomqwIXfOKoXvdxwNYjyszH0hit7uBFYsWfhFCiZziopGjoAI6MyV96uo3rN-8bR794KqFGp70MsuS5d9tnVwiu0mq2XTTwH4BQXI4AzMEzhiHcRvxTTkp8pZzz-EFgpefSOj9n7VokAiOBKg_Na5A4WO6dj11lbwVryXEPAK7JRNXvHQmGJvEe_ZLg-DcAnF1CBtHfhFQX2VqQ_jnNjmHduvEsav2aCA8G17UKLfr5VdonFbANXAvqKe9-ZxMphoRVPGMq6ocGjhkLprVwhX_Vl-RQHRgnwUQB6JAspEUg7lE_IE1-xlLjzTWHQeBXjhERdwlWS5I9cY5pQk0gPKup21e5m_3ZhpJy0kHRG_w-MssN8svTwEBptg4VzYy0TphneRNayoPwMfdYO3BLpMdwyu8kRbHkaiLUkBPh4uwBuI9u7z4OAH0-IktwfajD8_lueXuapK7wR_tW4XPdzEXZUFeZ5QBeLZTrLS_dYVA1nlxJW9wPCKMbmyfEQscecmOgLMJ0pWmY86peFdcdBdfyrM0NjYEuO4PGpSgqvFTX_qo0kNfV0mWQaA",
+            "Platform": "Generic",
+            "Size": 570065
+          }
+        ],
+        "Contributors": [
+          "Frank Herbert",
+          "Michel Demuth",
+          "Laurent Genefort",
+          "Nicolas Martin"
+        ],
+        "Series": {
+          "Id": "e705cacc-b186-5855-860d-ee717bad03a9",
+          "Name": "Ailleurs et demain",
+          "Number": "2",
+          "NumberFloat": 2
+        },
+        "CurrentDisplayPrice": {
+          "TotalAmount": 15,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "086af3ed-8dac-d432-0000-000000000000",
+        "Locale": {
+          "LanguageCode": "fre",
+          "ScriptCode": "",
+          "CountryCode": ""
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:53:00.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "589d2e04-c63b-3bcd-b130-05b624e7d8a9",
+        "RevisionId": "ddb50dfb-d801-4ff6-9800-b7ac2b5c8fb1",
+        "IsHiddenFromArchive": false,
+        "Id": "881864a9-4c29-4eaf-9e1d-25fc7f57e994",
+        "Created": "2021-06-04T22:53:01.0000000Z",
+        "LastModified": "2021-06-04T22:53:01.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "881864a9-4c29-4eaf-9e1d-25fc7f57e994",
+        "Created": "2021-06-04T22:53:01.0000000Z",
+        "LastModified": "2023-05-17T17:31:46.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2022-06-18T15:25:09.0000000Z",
+          "Status": "Reading",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2022-06-18T15:25:09.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2022-06-18T15:25:09.0000000Z",
+          "SpentReadingMinutes": 19,
+          "RemainingTimeMinutes": 10
+        },
+        "CurrentBookmark": {
+          "LastModified": "2022-06-18T15:25:09.0000000Z",
+          "ProgressPercent": 72,
+          "ContentSourceProgressPercent": 50,
+          "Location": {
+            "Value": "kobo.11.1",
+            "Type": "KoboSpan",
+            "Source": "OEBPS/Text/chap_0017.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2022-06-18T15:25:09.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "589d2e04-c63b-3bcd-b130-05b624e7d8a9",
+        "RevisionId": "ddb50dfb-d801-4ff6-9800-b7ac2b5c8fb1",
+        "Publisher": {
+          "Name": "Bibebook",
+          "Imprint": "Bibebook"
+        },
+        "PublicationDate": "2013-06-07T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782824708195",
+        "Genre": "180861c2-21ea-4793-952b-ecd39613adfe",
+        "Slug": "fables-livre-i",
+        "CoverImageId": "65e9916f-e88f-4709-b263-0e8eedc5ddef",
+        "IsSocialEnabled": true,
+        "WorkId": "589d2e04-c63b-3bcd-b130-05b624e7d8a9",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Jean De La Fontaine"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "881864a9-4c29-4eaf-9e1d-25fc7f57e994",
+        "Title": "Fables - Livre I",
+        "Description": "<p>Les célèbres fables que tous, petits et grands, se doivent d'avoir lues.</p>",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "180861c2-21ea-4793-952b-ecd39613adfe",
+          "4f51fbee-b709-41fe-8c3d-91b8ab6edead"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "None",
+            "Format": "EPUB_TABLEOFCONTENTS",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.zoly6-4Ccul6V6xmg053VA.TWR5vv8y7bWOQl9PJIxu06xC_7jhhWUXWnlBU-JutwWm_v3By66yCp3b51tmTP5f7b9v3-g2UpUtvInxBpmD8MUAkKBFbOiM-3ELM0Q0MUHO0Rf3335iea16BsNd9c-sHq-fAHyDuJKmY5NewfA3TdWK5h2BwSuno5Rh7qFT6k0NGSY097ynE0Th9-Jd3zgZSNyDmLWiu2JfEJ4bva_p0PQSMkdkviaLgJjBjDf2YfeqgbaMjyYGWeQe01YWl9wWAOIWw76J1VVdgtDoij_93voJVTCYTpTlHG6bOfH602-T-pGpp_MD4NN5fX0WFL-miwO_guL9asOJ0C5nkrA-gD95qAntA9YnCbwqjg2mKyFwoxGYDYV3QfFVxCpMtkkzgUBUy11I89aVK8i4KULwB4nREMDiB7m1LxU0SkcqsyDNvL48HpB27iIvxbJGNh0dBAJ97rL4FYFeNDycpPhZYmSRWPg8shMsLJIHVPBRtrEt0stZ2xP6XhnjRz9ONdfWK2hZ_XJSxyVMz_yJT-zlvDGaRBbq8cRUUr1G86Hx8WDBsr_RYCbo2Cv7cz0SPveMFBIjwySBvSUknsJ7xZsWqpRituF74c-hzC_FI0gMjOVKhNH8FTmC3H0By4n8cEUKMg6pk9u_8-P9MtR48ACgwTQ6bxPnkRVP1XidPvQ2IRAx4zMiurYSSBu7z7Adhwt9",
+            "Platform": "Generic",
+            "Size": 1526
+          },
+          {
+            "DrmType": "KDRM",
+            "Format": "KEPUB",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.V0vRHlzb4aLpNxY7b1TPDg.EnzZ9ve1jDiUVKAOTz984kEfmMCLLsUStLjxJVflcPLovskEnWd5D9WXg7fThgGXhK9aDpsVdZvmjd9uR-cgCvJboIZqiYkZV7HhEpqn0PT8I-j_WfaaVb3n_oGtVXdXXZJ5bMrZA5un4CgMwVtNPbAzkAgbFI6LUt2kQ1YHNsABKNRpSYkD6vBdX2-xFpfrLgLHKkQh3PAl8t63OYd54FN-r0AKLq8pnMKYV8Bfw0XK5fSQuHgYsuCoIOCJPqto4RPkrTOp8CrID0QtVV8HiQqRK3XWlUcHh390X5b6Vru6fB3qoYCpc9xR9MJn7IgFY-Po_PI_7bk-MrTpW7IjGLljnK5o_eDLkshse4FyC1JqFzmjWNo5yxc71_jpig_PHCSb3QYiv2IizlVpHkjcawtlbHlShDpK9dk8Dn3OaPLQT8O7VLZqTtF1hmqzn72pP8qZ_Y5rAeRnzG4aTPRlv5fjSY6gr6nUprf0EIDQ1InN-AgfRKRISnGWEEHfCDqZE2RJuWNc0_iKiEsO88yR6lf5ce_EVT562EXByAsZosr3HO_jub_VJpFsXRjwi9mKBdJvUiY9hu22NpiBe0vd2sUlArNrgsuOWO4AyV3ORQM6moSZ5T_UEKdKTVL1Z9R7SnD66Xnv-M_C5NOTedflYXHgia1Uu_KBLRutcV_48lztxTtmRLMnxrrscJc4WsJf",
+            "Platform": "Android",
+            "Size": 493823
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.itEL4dmbbzRc_7WHUggmRA.aIklD2EzBy047LzBrycWu6ekva5gabz2IudcLya1WQnxAEudiK-aGn7r1lhCjIg1TxkpLoWP0rr2ayTpuCaXbWojA7W44VgNvfslKUeX70HF6ufgot43eIu50AbgDZJ3qdtaqLGFuT6gLlBFWdbx11nocyh9YgYoBopeSl9FEetNzVn2C8AAllaAbRDblZMy2jPVknMxMv0MPlnk6qo1tjZku5tFeYS4p-SWF92ajCc4EYOpPmzdRZ8HWhJC6mhE2gD2PUKFLRyAGkxEbgnYgv3Q4qutHzw2OWXdQRct21L5-twLmcOx-PigQKSSngRP6JKwygALAFdRjXT0ojiAuoWM-5rMrlZw8Cz7utzf9o_ck8AX0tRtMGCPiEPUY-VAvRsVDEA0nArhTcO7MqtUG8XljM8zyXU667fyivaNR5qFp2x2pCIn98Zsk2fWIrJVAQvf0u6ZiQ9w9STPyABwkeNFySks8-u3nPSZFcfNNuyuLuhF1JLBZqFhWs8cB5Hv1zV1iB0pScW1pWQO2AssgIJ1HW5Z9xlgxV2jKthI78fPZOBnymH-VwUPjNclEAck7xWMm9hrKW4x9YWH1rIX38mF1yb4sJ6ttGehC8AE_xiIBP200iXJuGfOvRlRAq-XfV0drF39QbKLWXlFkpDshw",
+            "Platform": "Android",
+            "Size": 260013
+          }
+        ],
+        "Contributors": [
+          "Jean De La Fontaine"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": -1,
+          "CurrencyCode": ""
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "069c9b96-e4ce-3a26-0000-000000000000"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-02T22:21:24.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "fea14279-1ac0-3358-ac0d-cb7885fd5d50",
+        "RevisionId": "1b0fe7c4-1d37-4252-a116-3d43b892b331",
+        "IsHiddenFromArchive": false,
+        "Id": "4d92d1d7-d45c-413e-8ea4-3f6118e7ba3a",
+        "Created": "2021-06-02T22:21:24.0000000Z",
+        "LastModified": "2021-06-02T22:21:24.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "4d92d1d7-d45c-413e-8ea4-3f6118e7ba3a",
+        "Created": "2021-06-02T22:21:24.0000000Z",
+        "LastModified": "2022-02-02T18:39:18.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2021-11-30T21:22:22.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2021-06-04T22:51:18.0000000Z",
+          "LastTimeFinished": "2021-11-30T21:22:22.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2021-11-30T21:22:22.0000000Z",
+          "SpentReadingMinutes": 308,
+          "RemainingTimeMinutes": 0
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-11-30T21:22:22.0000000Z",
+          "ProgressPercent": 100,
+          "ContentSourceProgressPercent": 85,
+          "Location": {
+            "Value": "kobo.1.1",
+            "Type": "KoboSpan",
+            "Source": "OPS/cover.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2021-11-30T21:22:22.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "fea14279-1ac0-3358-ac0d-cb7885fd5d50",
+        "RevisionId": "1b0fe7c4-1d37-4252-a116-3d43b892b331",
+        "Publisher": {
+          "Name": "edi8",
+          "Imprint": "First"
+        },
+        "PublicationDate": "2021-04-15T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782412071359",
+        "Subtitle": "Se libérer et se reconstruire après des violences sexuelles",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "l-or-de-nos-cicatrices-se-liberer-et-se-reconstruire-apres-des-violences-sexuelles",
+        "CoverImageId": "947fd5dc-5ed5-4790-8b2e-382b7cec1c63",
+        "IsSocialEnabled": true,
+        "WorkId": "fea14279-1ac0-3358-ac0d-cb7885fd5d50",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Anya Tsai"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "4d92d1d7-d45c-413e-8ea4-3f6118e7ba3a",
+        "Title": "L'or de nos cicatrices : Se libérer et se reconstruire après des violences sexuelles",
+        "Description": "<p><strong>Se libérer et se reconstruire après des violences sexuelles</strong><br />\"L'impossible est devenu possible. Exit les peurs, les doutes, la souffrance dans laquelle j'étais prisonnière. J'ai une furieuse envie de vivre pleinement et je souhaite que ma vie soit belle, épanouissante, remplie d'amour, de joies, de rêves à réaliser.\"</p><p>Après avoir subi un viol alors qu'elle avait 15 ans, Anya a mis vingt ans à sortir du silence, à surmonter son passé et à trouver la paix intérieu...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "75a8954d-6849-46db-b29c-be0da09d806d",
+          "446f7d6c-b95c-42a5-806a-55a081825412",
+          "b1590a5c-01b3-4760-a191-96d6809a4882",
+          "949c64be-6291-4b16-b192-3d9dedcf8602",
+          "330a58dd-ff14-459a-882c-74fc41d20759"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.mNSLVEy-iEjZP6BYQEJlFg.Mf2007HJF-DSUsun0F5Uv-2ynnZrl_5E7bT0TudQGyOTRppFX4yvkierRwX2yVqbAsIA0jzpUG17eIKIyjR6RvlMXB-DaMUbvrQe1KTm53N4W6tQSuIPoJuVGZA2u_meqTXzNtWeE4kOUWV10e4tjntPPXdpXdwviy0VD9VIX0xAYNExQOxNUOApnA4u9aHLVXY4PEW9gAKPxcvxAIRgEVzQRQ-d7-5DxshTDhI_G1pQEY-KVcFbDNiigAEZCyDoIkOJkeyALxBlwvpTFNaFCkZA1mRahQRraicdcADC0YreUfIwKGC2e3jfo5GQ_lZQk3DsqLuO0uSYmJ9kFqikZjMF65fGK5i9QbaHbrHxJVXAzjDYDTy9XDvqcZhh82gW9L0pQnc06FPX07pWda8j_7G9yceScThXpOnqW58AyuD6WdTdkR8QhGAHd8sZSlPgaik2OrRdkIKS_Tc6ATDSZ7tr5QtnRSQAgULZ5JqCcPFrx8m9tKlFa47lbFFUt7hPlBVMWKLf6LoTkNbyo8MnFnTKKrkjFwd31sziAFN5-ON2QL4Ypv0gnZZb2Cg0WgIdwJy5Unf8r0C31gz-E6FYozVj42m0-Ln0YQsHcqtKNua2MlTJEY4HHLIwtyupThCiRuPo3iTVDPTU_6zLT4tp5k6fHEe43wyZA6ai9PkXnReSArDfGXYpvNca7nXhtM73",
+            "Platform": "Generic",
+            "Size": 6962103
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.8Rno1jKJEn2C4OAnzmAR-Q.MIqOVhyY1PG57jSGOAFvr0wrYNhn4pJXezozXkAm1nWRk9gTG533GXx_jpxweIffWSa2c75AltP7fmfdxsvn_Z0_KNLxQFyk9cpAucndsdirhd0V2dgk6jiNdVA9IzCjZc6wSxYOJcq8WudBiP-NusYVVxSl5A6hakPGyxbZN9mEl3ZD8fGPQwTr76z4eW1emHEywlv9RArS2rJO4Cfj6LrFcboPAgTbxOmrYqjUv_ycK9gGEc9mm1crSQdV6CU1oWP1dVMFefrgXbbQGDZebWGdJ6-w1ovotUoPVtdxrcqlAMbgpFbzYaTXI-nYlOwruTZXFLJxyIbAbLsrBjMvx4iNDjt_DLEbdWqPe9t1JQsdHoc-G5Xtnxgxr59DmV-SsTctuTe9XzSzsERQ7lV3lcP3xBtyz6mF8J4KX2jxSvht3-9ciH3z4ESFfrZVU1VgvMuAyM3aV98bqWHfF5yvsvfJjXtDXBvo2KfPXsz0_r08R3NNFOElpK8keyxYOYwD1GTvgaRYWOzHk0K49DOgQEEc63UguGgD7m1c523YRC3gFgR7yq514AVtVSjfY9K3IScuj6oUBZwPKnVmsjqptv86YRen_Wllg8Z_Z8TXEVZBiXMfsk3_TNcs2fdvVumLhvfmKJ1OEjZ3OoN31cdiAw",
+            "Platform": "Generic",
+            "Size": 2553012
+          }
+        ],
+        "Contributors": [
+          "Anya Tsai"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": 17,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "2ae0b33b-574e-e68d-0000-000000000000",
+        "Locale": {
+          "LanguageCode": "fre",
+          "ScriptCode": "",
+          "CountryCode": ""
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:54:17.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "9bcd7515-2787-3267-8327-4dab0770c174",
+        "RevisionId": "611e0452-e13d-49e3-b754-71a121758175",
+        "IsHiddenFromArchive": false,
+        "Id": "fdb14716-56ef-4f1e-a230-41db096415df",
+        "Created": "2021-06-04T22:54:18.0000000Z",
+        "LastModified": "2021-06-04T22:54:18.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "fdb14716-56ef-4f1e-a230-41db096415df",
+        "Created": "2021-06-04T22:54:18.0000000Z",
+        "LastModified": "2023-05-17T17:31:47.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2022-06-18T15:02:47.0000000Z",
+          "Status": "Reading",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2022-06-18T15:02:47.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2022-06-18T15:02:47.0000000Z",
+          "SpentReadingMinutes": 3,
+          "RemainingTimeMinutes": 9
+        },
+        "CurrentBookmark": {
+          "LastModified": "2022-06-18T15:02:47.0000000Z",
+          "ProgressPercent": 74,
+          "ContentSourceProgressPercent": 80,
+          "Location": {
+            "Value": "kobo.23.3",
+            "Type": "KoboSpan",
+            "Source": "OEBPS/astuces_006.html"
+          }
+        },
+        "PriorityTimestamp": "2022-06-18T15:02:47.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "9bcd7515-2787-3267-8327-4dab0770c174",
+        "RevisionId": "611e0452-e13d-49e3-b754-71a121758175",
+        "Publisher": {
+          "Name": "Editions ASAP",
+          "Imprint": ""
+        },
+        "PublicationDate": "2013-01-01T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782359320602",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "100-astuces-et-secrets-de-grand-mere",
+        "CoverImageId": "1bc6151d-f258-4e50-976e-ac651daeef76",
+        "IsSocialEnabled": true,
+        "WorkId": "9bcd7515-2787-3267-8327-4dab0770c174",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Collectif"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "fdb14716-56ef-4f1e-a230-41db096415df",
+        "Title": "100 Astuces et secrets de grand-mère",
+        "Description": "<p>Ce livre regroupe cent astuces de nos grands-mères qui vous permettront de bénéficier du savoir de nos ancêtres en cuisine, entretien de la maison, santé, cosmétique et jardinage. Vous découvrirez certains atouts du citron, du vinaigre, du bicarbonate de soude et de bien d'autres produits.</p>",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "75a8954d-6849-46db-b29c-be0da09d806d"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "KEPUB",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.Ac41X95vSFshPB8Zkp9tAQ.Jii44M3JLXcTOrhVJj57Z2VnXYBMQ0flmz_Xh8WKULJ0-rOZ86sUr8u0CWk4JusjyDEzijIxNaMvfUq1q7nobsbLXwKLAwp-Bz-CY9WOHLJSy2lDjnGfQ7JEQa0ZFbY57SpE_GQhWDpJAxEY1RN2Ec-7uuuAkrJTJ-KkR-mLp0CFn76SwNNeqhicMqI-35WhjnxlQ6dWJaTwdHjmrHxDdO70Okf5u6CjmfnBelQAHhjeZzgDyJ3nkhY851YqwlCb5Bv8VLKf83iHtkl6B3UKIfW_QgCV4BWqpYIyfhKk7IxarkUVlkNqGATM_Kzo9oLfIAr9CSnkSM7KlO2nZLjhJjlY1O24BKb2cm_npaJ8a9BKB72GucZZugwad08jDG8GE3UcaNqXc3Ru3G-OFvgNiJ8xn4UcFp7CQW9yb-w0e5RyhzlifxWR-fAGqJ-uPukHecBjvF8WmyvCdx3pxX7kJxZCfkCkZK2LzvtSH1fQp21vPqVeD5EgCDFJ9Knkeqdik4OvipJp9ChoRcjQPBsP_37iKBxUzRE8YnvP9B5HaLWjSyRa2-Mq0yILNObq038h-vCL5Vgnt-0gJrKYQdwS8IRrjjaPckRhs9SrUAhmVxFAvYAjPPoPSUzHedvZJenYKTiTz_UvRlqBALkq7zNuRWoLPWhMZZ-WjfD0YyJJRjxXzCKMsi5EgABepcBhVW0S",
+            "Platform": "Android",
+            "Size": 1912667
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_TABLEOFCONTENTS",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.iwP1MYlFr0MzpyiHsZFeKg.bI-0CVXICmdGDUL1W4nr080hrDQVx__zwAQ88GGQy3UqATR9cUCL1n_PiEON3Avt2mJxKQWpM-XuXqy7t4M_dLlj7AKm21vNoj3w_xueQWi-XWthyDIvPjXYxerj-e1qRy-pMA0skuu0kWSbbuuRYEFHOkzGgEu7F4NSHLrtbC2XYugwe3bj6AkMKrVkxGa3C6EJnbsGFe3_OPB3vq66d1BnDw_BhX8CB7piuFHxlDgH9SkZzeOxDzFBnxTtzZAU8arywctcqJZ6JaSkZsEZmS0UN6Ec3-E8cO-InaTgzNRNbOBG30NjR96XcNaSUXGcS57SivEqWud0kxnMp07f3xb9HIyt1lUFWPxbrQhHHuQmk-39Mvj-93CNnTmf_rJYu7H40Rf-NDkP-BOV4FBWi_jp_0MhrUW8gzDzfNo1uvMmhk7g1ynUSiqgqFCe97cyMnUx8e_rIpvQgNPkMYqrgi5gFMIIU7FcEJG_aUVIPxH2DAZSUHqSviTUtlAA4SyzbffYW-wZkAu4GyqQxM1A0VVo7vluirDeeRoHq0km_evIJv0NYct_RWsEo0Yp6_uXOR2BLK8305Pl-szQwyU0W955Dpcd4LIePxGxHNvL45u3Yms4peEYPyvWcMGOpP1dKQ31eQnf2jGuIjfqMSsWzZLC4c6xcl81vonVG6BaKX9bD1IPe39wN1dHSteGt5xk",
+            "Platform": "Generic",
+            "Size": 1678
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.O2fQpzYVNXFNTTkOZg8J_Q.IvtKATVtFDSEtcez0nFvUN0tqRxqOSDfBA444rEydofY7UmQegrDpf-p2yhNbuP7e4_RsUUPTJmFsQint1j-LCe4oye6uYr26xcs08OSW_ZQjWwB3u_-QS-8tJMI2nPKBoZVp-FCjofqV19BBuNK2VkTYvhrAdrz1TmgjDBStbuUaHn-Fj2PttBMBsvdR0fvuHeBfYaTKPgPgRoTMASaqf2RIe3JJlQdgVnxdXTIyLnyeRWtYwPSLrFO7GOBFCmcX1bE0Ljw6yX_S7ipHKtEZgug1ZevX42DuiCLNi5TaVa5d8ceR6tRAG6RM_9uUiuFgpYjlXNybkqhL_9J2ap6XLsNjnLu45wMXB4gztmr-Qphej5sxXXbD7BjYR-S8VUrt3zW9503bcHd4Y5_5BwiOoJKPmLb62F_kqPv6193k--edHLJ-3ted5vER8aTcI4ypatDeWRai1esB6Q71sfTJdCMBMMQjIROM3359kV-G7vy0kepnXDWtuv5gxsGnuGsXnRFgGYvk1XYdbyrzKMTA7iCPsw9W2bZtiMtUsoxHkniGC6FjN3i-us6TxFzjKN3c7D0zG4qF0tzVCwK-JkKBkx3xjum7wnuQAaxmH7-DbuXesDzHIl_z4DhbKIphivIXaZ-JOpknEOX0ABsJxyaKg",
+            "Platform": "Android",
+            "Size": 277794
+          }
+        ],
+        "Contributors": [
+          "Collectif"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": 0,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "c9c4091f-b6d8-0c97-0000-000000000000"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:50:54.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "7d360af7-ce11-33e4-a344-9bd872903428",
+        "RevisionId": "fd794071-846f-4196-8dbc-807a9b0e297c",
+        "IsHiddenFromArchive": false,
+        "Id": "3b9933a3-6874-4cf8-bcf6-4338f81d3ca3",
+        "Created": "2021-06-04T22:50:54.0000000Z",
+        "LastModified": "2021-06-04T22:50:54.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "3b9933a3-6874-4cf8-bcf6-4338f81d3ca3",
+        "Created": "2021-06-04T22:50:54.0000000Z",
+        "LastModified": "2021-06-04T22:50:54.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2021-06-04T22:50:54.0000000Z",
+          "Status": "ReadyToRead",
+          "TimesStartedReading": 0
+        },
+        "Statistics": {
+          "LastModified": "2021-06-04T22:50:54.0000000Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-06-04T22:50:54.0000000Z"
+        },
+        "PriorityTimestamp": "2021-06-04T22:50:54.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "7d360af7-ce11-33e4-a344-9bd872903428",
+        "RevisionId": "fd794071-846f-4196-8dbc-807a9b0e297c",
+        "Publisher": {
+          "Name": "ALBIN MICHEL",
+          "Imprint": "ALBIN MICHEL"
+        },
+        "PublicationDate": "2019-02-26T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782226434104",
+        "Genre": "180861c2-21ea-4793-952b-ecd39613adfe",
+        "Slug": "laurie-2",
+        "CoverImageId": "3661946b-5e66-477d-a054-170902c1103b",
+        "IsSocialEnabled": true,
+        "WorkId": "7d360af7-ce11-33e4-a344-9bd872903428",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Stephen King"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "3b9933a3-6874-4cf8-bcf6-4338f81d3ca3",
+        "Title": "Laurie",
+        "Description": "<p><strong>Une nouvelle inédite et gratuite de Stephen King pour replonger dans l'univers de <em>L'Outsider</em> !</strong></p><p>Lloyd vient de perdre sa femme. Pour l’aider à surmonter son deuil, sa sœur Beth lui rend visite et lui offre un adorable chiot baptisé Laurie dont il ne veut pas. Mais avec le temps, un lien se crée entre l’homme et l’animal...</p>",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "180861c2-21ea-4793-952b-ecd39613adfe",
+          "fa256161-44ad-48ba-81ff-9ccc7ec510ce",
+          "6d200d05-74cd-4d15-bafa-7fc9a1db7ac8",
+          "2b050f91-acd2-486e-95b5-3c1a9eccd273"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.jt3eImrwlO5633z-5T1piA.omTdr8s-ffxT2TNJbNatpaohxeIe8A7H-tsQS-YFKOELAdJH7-IsCUnNW0fuVgf3kLJ0F7bDiDQBTbQ5gA8YQdbEVSnThzp45bm5LGNsyKOV0W8jmhJtkQA3tE0EkSQ8RKqfbD38M4Gvmh5WlppgZ09N2H7yR1hpbWTJGPAGJUhzJ6PsFNcbKRHpvah7Gs8SSExXPZCWqj12RI4UU1ZYL5Or-gp_FmcEQ1rDT9BcYEmfUUueFYeSc8ZZQFzq7UiHbTnPwgIaxRSL3xorsGFBUC_YbkAy6jJElKaSfHNEBtnW_qKJGr_ULlr9_5XuVuFRSmuH1F20KruMYkpVdtAaU5lhxDDIwExovQDUsNNX2fLfMNJG8ebExK52UM-H6Adl9fcNDotaF8NvwRJ-sNyf76TT7kObHFcraaCMfP152PBO8YfHlSVFMoiU9vAWH8vsFesLMd9gC1jViy7IosjicRZA0Xx8bmUgqPau_fk7KO5pjQSsy_GzrGWcjUSB6pPqWcIDioiDojddgDl8a2PKH3ejV7DB64VCu6YgIPIKx0olFq06yZdTBvFs4qXmsDuscIPOICfPBoP1IevDm7HAMgimTcrecgNY_6ipK99YxIoHnwEYXonHiy6-8WYgZx-ox57OtQq7OAhIsrIlkYdbPDVKluOvb4HB8vtAf-msgzEYAyx6MXqyWJ2Ugb6Vh2z-",
+            "Platform": "Generic",
+            "Size": 1107765
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.BVwKp7Vxy4UO7Mir64Xi0g.RvOP4YErrRWIf2oocMTVQQ0QxjhcvQLl8HllfrZ56X_wUXOaqvXRUwEDHPnIRTdFKjoMtYU4lQfFmArok-eEda5XsBvMD0Bufn9HL2-LMLmn4_x8bBClRIQTD28l86EbA0RRKYVhYP3Htbgv-TVE7pDtXDSkT_r8EQ9P-WA94TznIDoaPSw2YvC2EMnfBZ-1x5fyYgl__0uD-x3h1UNwM9x6D7zkpc0GY4DKOq-Fl76SDx3ajJXyEGF3xaHClZkTK9v-B3FoIMrr4OZ_BFelubdFSfgt7QtFCocRWcex8FPQ4BR_hRSVeawEgFR4fK4KrXUyDwgRpDzUxkXKiPQZGpPBJI66E-YokU5SM4AtcClxiZRktFAejtYE34wv3MTdsp8yz-Jl41c38ieeazbnYSyvFhCyf-DrdGc8ORgrFW1OELjVejNsTOZohYJaM4rApBi6al2lWMT_l48xMETxEzp9ELqegWX8sbdGGpg2iQ3HnJrEzCufAsXzmTjq8EK4aH8oEo7s0JD5i6Mn5J0qpq7wZGuHEQAfcJ8_KOfqXypsc6LB8v5vSv40nYkOfQV1EkvsnVFuQ-Zc5DFTmDyXc6YZ6xkZ0T0vYYdI8TqDsTQbwJ5fjnQlNAAfTHII-5qgqkUNbV9Wlz3nPz8t6_t8pw",
+            "Platform": "Generic",
+            "Size": 1018159
+          }
+        ],
+        "Contributors": [
+          "Stephen King"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": 0,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "c560d5ab-bf20-4026-0000-000000000000",
+        "Locale": {
+          "LanguageCode": "fre",
+          "ScriptCode": "",
+          "CountryCode": ""
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2020-07-26T20:41:33.0000000Z"
+        },
+        "IsRemoved": true,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "62c693c2-0365-350d-984d-5896395bfdfb",
+        "RevisionId": "29dee0ed-73ae-4245-a998-8526e04d93f6",
+        "IsHiddenFromArchive": false,
+        "Id": "6c108f90-6433-44bc-9741-6c1bb8ac1891",
+        "Created": "2020-07-26T20:41:33.0000000Z",
+        "LastModified": "2020-12-07T02:05:16.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "6c108f90-6433-44bc-9741-6c1bb8ac1891",
+        "Created": "2020-07-26T20:41:33.0000000Z",
+        "LastModified": "2020-12-07T02:05:16.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2020-12-07T02:05:16.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2020-12-03T22:27:48.0000000Z",
+          "LastTimeFinished": "2020-12-07T02:05:16.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2020-12-03T22:27:48.0000000Z",
+          "SpentReadingMinutes": 0,
+          "RemainingTimeMinutes": 53
+        },
+        "CurrentBookmark": {
+          "LastModified": "2020-12-07T02:05:16.0000000Z",
+          "ProgressPercent": 0,
+          "ContentSourceProgressPercent": 0
+        },
+        "PriorityTimestamp": "2020-12-07T02:05:16.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "62c693c2-0365-350d-984d-5896395bfdfb",
+        "RevisionId": "29dee0ed-73ae-4245-a998-8526e04d93f6",
+        "Publisher": {
+          "Name": "Club Positif",
+          "Imprint": ""
+        },
+        "PublicationDate": "2019-01-01T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "1230003011966",
+        "Subtitle": "Les aphorismes du désir",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "kamasutra-32",
+        "CoverImageId": "70348e98-9925-4208-a00b-983c1cb0d595",
+        "IsSocialEnabled": true,
+        "WorkId": "17404b5e-0752-303f-bfe1-441a59d927f1",
+        "ExternalIds": [
+          "od_4514472"
+        ],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Vâtsyâyana"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "6c108f90-6433-44bc-9741-6c1bb8ac1891",
+        "Title": "Kamasutra",
+        "Description": "<p><strong>Découvrez comment dynamiser votre vie sexuelle de façon incroyable et celle de votre couple.</strong></p><p>Mon constat est le suivant: la solitude en général et sexuelle en particulier est incroyable; elle va croissante d’années en années.</p><p>Pour s’en convaincre il suffit de s’inscrire et de visiter des sites de rencontres sur Internet pour réaliser que des centaines de milliers d’êtres humains, hommes et femmes sont à la recherche du plaisir; oui des centaines de milliers, ...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "949c64be-6291-4b16-b192-3d9dedcf8602",
+          "656c22c1-7438-4609-baed-7f999d3bd647",
+          "433a5b22-213d-466f-9c5d-125276eae564",
+          "6001601e-e1a7-4399-8955-b4541a19dc51",
+          "330a58dd-ff14-459a-882c-74fc41d20759",
+          "2e06bf9c-99f5-4b2f-a93a-70b06487f44d",
+          "b964d0dc-ba10-4545-8056-a87a30f9d982"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "SignedNoDrm",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.5tFiOUJ-in_aKiU3-Gfyaw.PoZQLPuNG_d3N-LwBhJ_iibM3x_Gr5tt57Tf9KXgARrLpQtKzxlV1n0iB9HvhwtJroE45K_RsbhCeUrVfRGYfeDPgVHFmcOrMJjMJON9UcF_7QE9-KzbbcPnA8wW1MTKv0cIr--EVXecUKxEcI-HqEdvfmJltINZKpPLb3Rbvf4z0F5DHrYqyQD1FXDH1ZfhPgMdR1hAXaVLYHznPDHDx7aAtFYHR7Wf_6rTGewlUq9hoUOEyM6ga5T6FMlEN0VlYRGxd3FKGM1_EpHy4g_TpqNc_b51Is5z5zSYj7xrY7ptP03_MsMFvsDOVXLQcWA0od9MUELaWlGnh_r1Y-JYSK8AXRJLAO65WOyRj70fH0Dt_RyG0vIBJTd5nbtWheIYlMXheYPp8f4abZ62dUG6g2OkmaQcSIaW6kAadLQB_IXRdgaNN04u1Lr5YXiSxiphmw5rxcKyQPd_EE417q5H7QP38IpoZbZPvZLN4VWAoW0G2WbKFUYyn3GGkvEQE_3ASy3R0zoXg43zrqbfYYRFcGS8e_tAH5N8p127It8Sf2LPfYh00nEhGo8goMN8GMdTtwvT6ilPt_H2e3_Cs9U52sJLamnmGEPLUBMcBQCdeGwNLTPPX_GcnZbWxQFYxeKfDHun5JfRClhFayTyiREZGHKSM8nNlD1IHEUzZJ-25VcqhcNVQoLG_ADrfN8SqWeU",
+            "Platform": "Generic",
+            "Size": 473641
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.CjUFPpdunVHkMr6VW1rMWg.1k9Mmoh9u-uJt3Z3MOQg2U9g6lh_hxNrns_LuvUHwE6psMahl8ypTUIhzPtnMiJ7CPJZRIL4HXxmLD_z2piFG4NxiFBm2FQwbRg9mUi-d42c183DQNibEVAWW4l0HJ44b2FFL7JAdEcwFZfGxZ1dtXDTLvp_lkRj6y_bFi0rvX2jI4DxCR1AYaTDVRsDxIVMLp-fv0LfsyGiH7r3fty-xYhAQK5NQS-tJT04zYoUtnXhm3-hdavxh5nEUIkXDPDwGksHkaVIie65DYdsKZaW1X-GQJxIQ9ylzE6AwUqTN4ffAl173YfuD258mPEan8Sj3YcyIwid7l1nGjkilY0Hpa68AClbK-as5iX0P2o9kWmbly4OPnghi2s_CcLn3Gz7avyXntgKuwO68GA5iQVQYjuxPGe3xpUR0REyn_lZWF05y4sCj4Rvn8v0uvJ-kh5EIvnKgE3w0syiwBhuQjmhqa1RbOYr0IgevOnt2GsYxLQtqZ2pJf4xdaYGx5EOXOkyTPHd0bigKlsVazWCPTcBMRMMZKPQlEKUmC6upqBnO-mkO7iSJOETOj62HJTu49fOBury63ndiFUQAM8ADTHwYqet16SUdkPUVK8ytYM27AIDVscBkvWD4uJ009MJxttikGCXauGkr5BybXl4JCbMqw",
+            "Platform": "Generic",
+            "Size": 366170
+          }
+        ],
+        "Contributors": [
+          "Vâtsyâyana"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": -1,
+          "CurrencyCode": ""
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {}
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:57:06.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "abe4709a-c9c5-3d2b-971f-2858fa111bf0",
+        "RevisionId": "b612aecf-09b9-44a8-8bab-468083fa4b16",
+        "IsHiddenFromArchive": false,
+        "Id": "78247a08-e3bf-40d6-ac71-71422396ea03",
+        "Created": "2021-06-04T22:57:06.0000000Z",
+        "LastModified": "2021-06-04T22:57:06.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "78247a08-e3bf-40d6-ac71-71422396ea03",
+        "Created": "2021-06-04T22:57:06.0000000Z",
+        "LastModified": "2021-06-04T22:57:06.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2021-06-04T22:57:06.0000000Z",
+          "Status": "ReadyToRead",
+          "TimesStartedReading": 0
+        },
+        "Statistics": {
+          "LastModified": "2021-06-04T22:57:06.0000000Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-06-04T22:57:06.0000000Z"
+        },
+        "PriorityTimestamp": "2021-06-04T22:57:06.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "abe4709a-c9c5-3d2b-971f-2858fa111bf0",
+        "RevisionId": "b612aecf-09b9-44a8-8bab-468083fa4b16",
+        "Publisher": {
+          "Name": "​Isaac Perrotta-Hays",
+          "Imprint": ""
+        },
+        "PublicationDate": "2018-10-16T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9781386019657",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "maitrisez-l-anglais-en-12-sujets-plus-de-200-mots-et-phrases-intermediaires-expliques",
+        "CoverImageId": "4bd26d4e-ed6c-42d8-89d6-35deaa05e7ab",
+        "IsSocialEnabled": true,
+        "WorkId": "abe4709a-c9c5-3d2b-971f-2858fa111bf0",
+        "ExternalIds": [
+          "od_4361444"
+        ],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Jenny Smith"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "78247a08-e3bf-40d6-ac71-71422396ea03",
+        "Title": "Maîtrisez l’anglais en 12 sujets.",
+        "Description": "<p><strong>Comment maîtriser l'anglais</strong><br />Une fois que vous maîtriserez le vocabulaire de ce livre, vous aurez une très bonne base pour parler couramment de 12 sujets de tous les jours. Ce livre est le tremplin ultime pour passer de l'anglais intermédiaire à l'anglais avancé.<br />Beaucoup d'anglophones intermédiaires ont tendance à se faire piéger en utilisant le même vocabulaire encore et encore. Ils ne parlent souvent que de sujets pour lesquels ils connaissent les mots et évi...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "7da322e4-c7e9-4f89-bc4e-1049c62a9ab8",
+          "df38d557-3bc2-4936-b7fb-d84b523d5ab4",
+          "a7159067-4435-4a58-9591-4c4416b17060",
+          "87690cd9-e9ae-4f4f-861a-88ca86b8ceb7"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "SignedNoDrm",
+            "Format": "KEPUB",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.eU4IpXLnOSDMyauaDC6yyw.6ShsetpCWY6WwnAtNc56noz6WHVGigM52l5iv18ec57gpDH25pzc9cEgPKEX7PF72maoJkcK0uodhJ0cD3pqWJLkeqAgTYHqVro2Jse4gmvqvVlEdi64lgoH9XtwfwWqEJ2y0px5V3lgiZpYN-u0si5KZ8YYElmkZX5clcttE6fk7CmkaNYZ8m6djs5e7eQew04bgT0Omz3t-FgvIJrqdFtXrVA3Xv4BTURWzPqcZcLaJXm43-BgJ0V6SJtUyoe4xpOcfvq7OeDTLZxHnbd2uOrWLTy7NecT46fWWnEyEI2eA9Bd15_5MRq-ZICmRHlHY_Lk6T4hVNjdDM1EdfDOz9iH07fKrUYLQ2UUxw2xxZS-izka_qpapbEvJXROY7_94xydYGjxdwDOkDqIVPHko-KU-Ohe31h6vUoKxHm7_CYf5kiT_KBaq2B9YSPwRpnnAPV15BGlWisqxazBEHxSN91c5FpWRA_YP-ks5FDRhrnJxVkGX0ur9_wi7FV45QwaAkYVN8tEMYm4A6TbEGz5z5hgb9dKXMmGz0Vi0UqhBFyzHME8569RlE26ECbGCfS4_p8XTdFNyo1Upihs8eZAXpTL7e6DQiN2xtZMShyfyOqExuSA0DVPGM4V1WOsCfz2LWVIrYkx0FU2Cp_ge4fA86a0kyYRpzQWbk_JFWtWRLzaPSZ6hU5Yh5tnYn0p1OK2",
+            "Platform": "Android",
+            "Size": 924108
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_TABLEOFCONTENTS",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.KBMnstBo3kA5lmaujs11_g.HVXuhtoIv4DXvdL9gRALXcE3-lQ15mwcNVMoEXAbeVK802xsRewXs5Ta4HN63sugKeKx1JXWGFoUJjR3Y40uslKD0TBm1CiN7XhkDnlj0FIYOihiQJi-J8WBFe5A-ohOrQjeFckR_R4mjlXj_qWTJWf68lEK-vKIHkMlatD0-L2TSyqH4l1u24g11yI9vZSRIoKnEJxnWVV5V4X6_oDNa21d7rNjiQQGnwV4CZ9Twyo8z-089vQg72Dfex2G9vANd595B3bI7eXLgOSrPzSbiqjlxwM5L046xOkkuGjQCIBhInyj4wV70BVBM2iZPxndmJnpJEpRpVSRMNJiaMBbszMVE2S98Bv4Rtn4P0BuJeHr_GaIab-GMRH-Lu51OjSFLvWF8vZihRQgJiuhwyRLpIxdSr8z5chHVvAy1C3-0K--d5GSkFY9np6472JBDE12F08ztBGMU0pA5N_5puZBoTPpS3A6aC26gglK648Do_MHq_baYWQo6vuH9vr9bYSrfMwghOLofQ1rCnA8QkKqT8Qwe1NWAWden_b1YejnUz_-AkavJeUUw5YsLHA2LryPeOBIxMZo46HUl5Hihc3iSzNr4aPn5NHvEq3VCnLquJ38jWoSJMDdtu5tEf6OJv4EJSgFChufusEK05ErS8kCivvpctmiu5XkXloNSZG91lkBC2b1UfjFYffVoCs9sztk",
+            "Platform": "Generic",
+            "Size": 1261
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.hNma7qdfWAVrR5eyMc2SOQ.1lZPP7kMBITopEEuZOZ46YdD440Vj-rgHobIXKr2fVKWpo9NRZ9xubQSyp41j7QkahncUExymG_m0VGgwJN-ICsbx_jL7H7teL6nyvMplyZs4BumrphJ_55BxakRGmcnrWYxYJUPVKFboL4uPjdnm4a1zi8edfshZ-3pxTyt-NI3qfKkmsmkPXfTQij9oq1oHzZ_6kM9l1MtNl7dwzACn_jWTu39S-1LD4wfzBJzjdl1iMyYzklpzN3a_-Z-nXxnwelRXh-PNMclQly6DOKSWo1jMgfv9u0YJBcezn4zIkcstrtgC1srNEu10BCbxrtM-WNL7uwY-cNV7HeocPaCo9zq_bvo8zci3qcd2TsKgxEpsaTCl26XoYul_mfL-dnSM7ryZD5-Q5OQwYnJK8FvaBMdSTG3HoicHOb5T0rVUOkZvpqg8BWuck7xHWWcWW7exAo8LBnV0fxEom9Mt0m7M5sgE1CCAK-sBTyuLpUMy3Berb4JkJuyhzkpsoPtXmtPeJaGJs0Zju-u9OTt-GMdItKpyedZqrNDj2ktL-8N4nPr0PsOJ-O_Ap0DguvXI0w6jrZp6Ow9NTRKs7A8mS761IGz80ZwVz-ZyX2Sb5mv9Oln4-uRZaFdRDQ704X4alBZK5cY4qC1TTiaGzxwTbET_g",
+            "Platform": "Android",
+            "Size": 12906
+          }
+        ],
+        "Contributors": [
+          "Jenny Smith"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": -1,
+          "CurrencyCode": ""
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "9ab2fbc1-932b-e3d7-0000-000000000000"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2023-05-17T17:18:50.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "4fee1898-241f-3369-8223-75806957fe6e",
+        "RevisionId": "da2b88e2-5a3b-49ff-afc1-37b68df99730",
+        "IsHiddenFromArchive": false,
+        "Id": "997a5ca8-7183-448c-886f-73c8c89e4b34",
+        "Created": "2023-05-17T17:18:50.0000000Z",
+        "LastModified": "2023-05-17T17:18:50.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "997a5ca8-7183-448c-886f-73c8c89e4b34",
+        "Created": "2023-05-17T17:18:50.0000000Z",
+        "LastModified": "2023-05-28T10:13:37.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2023-05-28T10:13:18.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 0,
+          "LastTimeFinished": "2023-05-28T10:13:18.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2023-05-28T10:13:18.0000000Z",
+          "SpentReadingMinutes": 1451,
+          "RemainingTimeMinutes": 0
+        },
+        "CurrentBookmark": {
+          "LastModified": "2023-05-28T10:13:18.0000000Z",
+          "ProgressPercent": 100,
+          "ContentSourceProgressPercent": 96,
+          "Location": {
+            "Value": "kobo.1.1",
+            "Type": "KoboSpan",
+            "Source": "OPS/cover.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2023-05-28T10:13:18.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "4fee1898-241f-3369-8223-75806957fe6e",
+        "RevisionId": "da2b88e2-5a3b-49ff-afc1-37b68df99730",
+        "Publisher": {
+          "Name": "Groupe Robert Laffont",
+          "Imprint": "Robert Laffont"
+        },
+        "PublicationDate": "2020-09-24T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782221127483",
+        "Genre": "1561e6f7-742f-4c1b-a804-187728814574",
+        "Slug": "dune-tome-1-edition-collector-traduction-revue-et-corrigee",
+        "CoverImageId": "d22ff864-14ab-442d-8d09-eb0bb6a4f9cc",
+        "IsSocialEnabled": true,
+        "WorkId": "4fee1898-241f-3369-8223-75806957fe6e",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Frank Herbert"
+          },
+          {
+            "Name": "Michel Demuth"
+          },
+          {
+            "Name": "Denis Villeneuve"
+          },
+          {
+            "Name": "Pierre Bordage"
+          },
+          {
+            "Name": "Gérard Klein"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "997a5ca8-7183-448c-886f-73c8c89e4b34",
+        "Title": "Dune - Tome 1",
+        "Description": "<p><strong>Le chef-d'œuvre absolu de la science-fiction, adapté au cinéma par Denis Villeneuve.<br />Traduction revue et corrigée.</strong><br />Il n'y a pas, dans tout l'Empire, de planète plus inhospitalière que Dune. Partout des sables à perte de vue. Une seule richesse : l'épice de longue vie, née du désert, et que tout l'univers convoite.<br />Quand Leto Atréides reçoit Dune en fief, il flaire le piège. Il aura besoin des guerriers Fremen qui, réfugiés au fond du désert, se sont adapt...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "1561e6f7-742f-4c1b-a804-187728814574",
+          "185d806f-2b4e-41b9-a0bb-03b3647751b6"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.XQRtn1NJZmVBFywoj_0kMQ.nOYlvlqdN7KE1izxioL3lCMKbMCf3rfGc4IrS-nMHAa1Ln58p2cQNQiOS5_ojESfZQGS-wuFQRu67S6gc352i9FF9zpi_ULae74fG0V3xFnwD24EEFYpqliOBVJO2goGGu2h6gPDHzWw1dFrecf8R5BmkYGvxnDHXEazhFWu3MK4566wkUXFRuOKIXFLhXfqraVifdarOEvh6IMyFvvq_2efqXr1MPp53jr7qAXCjbiJbmbN0dKYGqgezPyIaHIJd-J9rekAZJaNwF7cBaZfahSm3lDGTnCFeUdNTX3zQxSVtnGtKa0kA6kvha3W0Xx794n2it8QFaB2dg78VXbJIi54yh3kaslOJKAsXXR3KeaXDSatfhIKNfr8qjv4TpgBafhNfo3RsoYwHnas5NAG7adLePP5--i8PLAp6u5IuyWixUGqoKTLP58mG_3UzsQ1zGE3YhnACVxckIxFIC4Qg4WTy_yWEjP49YYAk_7AQMegu-DBBr49Fm4D4YixeocUGf3WAg4ImpDLqVGBL2RlIB-EprksiQB3ZqxjnJXOIb66T-WeoTD8IdKFIbWiWyUBSyU12ZxQV8oPryRLsrxHpn8i82ZPk9piF0z8_nkvj4NYBMmoLEJnpnxA2B2al74JHziMtobDM00gBEBqGVXenMZZ5d1X4e-EZpzGHyj8J3Rn3m7NoGMorsi2DGDirQju",
+            "Platform": "Generic",
+            "Size": 2972568
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.0PbHDSe7b57yUOEcOjnjLQ.LEZMvvYJIrCo7z5RYrOo5-FWR2m4_zY_kWZ-_-hLZrv9PXFHO_H4AD-MXBIDYSRkmLGLlAmiFu2aDGNgMhHAyzCMJAg1crtm9wsozSLOGVbYwrCKOeQXAMWJmAaPu6Ob-99_pu40EwV8fsKbjbYnP3TvvC2ZX7hhPyGj582_Y0A2CAazK_jwmzUtATzk9OfxzNEHaoQ-7w9m-hFY5s7m9ef4WVkjGWGIBMOYvO984TNx7CbCP1V5Pkz6QP1wh1MizlApEa_QFpF80_wU1nK2FPJKzR8oKaUmX0S7qzZDikooP7e4r7anGoMhmTJPga45_nbwulEPXDhYcf7Tnw8ReoP8KwX08KXaK3E1LH1wp2tBxFh1-YHhOaLQyRP7xMApPcZoiLwqz_-LIcYfghRh0hWnfH5J5c--ib4GAFfKKoq2SDX4ke1K-PNcn80TQf19-zEdw8dchLf76SWPbBGtuuPk_XvJ71bR7cORmsrxl8cXLWLc6K2zjSAUkGJHSmd8aH54QWUdUM7KRfhrPEqG1JV7DNV5t598jwouIXBsVseGKuQn6R9smB6M7DlCxXdHxmnRzbmQwCq9DTvFfFLhkGwM3eMl5G5Yjbay4sHqD3ynaQCoq5GEGco_wA8ILsmigf-HlktoIOAYA4xDN4X1kw",
+            "Platform": "Generic",
+            "Size": 621281
+          }
+        ],
+        "Contributors": [
+          "Frank Herbert",
+          "Michel Demuth",
+          "Denis Villeneuve",
+          "Pierre Bordage",
+          "Gérard Klein"
+        ],
+        "Series": {
+          "Id": "e705cacc-b186-5855-860d-ee717bad03a9",
+          "Name": "Ailleurs et demain",
+          "Number": "1",
+          "NumberFloat": 1
+        },
+        "CurrentDisplayPrice": {
+          "TotalAmount": 14,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "c837903e-452d-3f1a-0000-000000000000",
+        "Locale": {
+          "LanguageCode": "fre",
+          "ScriptCode": "",
+          "CountryCode": ""
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:56:46.0000000Z"
+        },
+        "IsRemoved": true,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "c7c94cc0-9190-3993-9e7b-f845eb04dc34",
+        "RevisionId": "f7ecb4e4-1f27-44f4-a0f6-022fbf1ae57a",
+        "IsHiddenFromArchive": false,
+        "Id": "fe9e78f0-3f86-465a-9314-a630078688d1",
+        "Created": "2021-06-04T22:56:46.0000000Z",
+        "LastModified": "2022-02-02T18:39:19.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "fe9e78f0-3f86-465a-9314-a630078688d1",
+        "Created": "2021-06-04T22:56:46.0000000Z",
+        "LastModified": "2022-02-02T18:39:19.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2022-02-02T18:39:19.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 0,
+          "LastTimeFinished": "2022-02-02T18:39:19.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2021-06-04T22:56:46.0000000Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-06-04T22:56:46.0000000Z"
+        },
+        "PriorityTimestamp": "2022-02-02T18:39:19.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "c7c94cc0-9190-3993-9e7b-f845eb04dc34",
+        "RevisionId": "f7ecb4e4-1f27-44f4-a0f6-022fbf1ae57a",
+        "Publisher": {
+          "Name": "Changer son Corps",
+          "Imprint": "Changer son Corps"
+        },
+        "PublicationDate": "2013-12-10T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "1230000238430",
+        "Subtitle": "Un guide gratuit pour apprendre à maigrir définitivement",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "changer-son-corps",
+        "CoverImageId": "af5472fa-b19b-4119-8aed-0f5b3044de96",
+        "IsSocialEnabled": true,
+        "WorkId": "c7c94cc0-9190-3993-9e7b-f845eb04dc34",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Romain Mariage"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "fe9e78f0-3f86-465a-9314-a630078688d1",
+        "Title": "Changer son Corps",
+        "Description": "<p>Découvrez gratuitement comment l'auteur du livre, un ancien obèse, a perdu plus de 30 kilos de graisse sans jamais les reprendre. Ce livre vous explique étape par étape comment faire pour maigrir définitivement.</p>",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "949c64be-6291-4b16-b192-3d9dedcf8602",
+          "73101947-b4c5-4fa1-b2cc-8fd3f254b8f4",
+          "dbe331b2-c221-4d72-925b-7036fd462a74",
+          "8275bc89-b4c2-462c-96cb-48630d3cb8fe",
+          "8dc955bd-ec2d-409a-85c6-ef50cb283e67",
+          "31361a18-0510-4242-9077-7963b7574b8a"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "None",
+            "Format": "EPUB_TABLEOFCONTENTS",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.0MA7j6qWH3fCq9gckW_qNw.FeylqYV68pJ7VX9upmujexGm7b4SCaWhX4UBhNOinoh-aXe2Nw1TRnUuBmxO2jc8ECWFF9vgYy1RbYzox17UVDgGX9sPbU7T6YQOfPV9ClyUuyoeo78MU-ZWV9yChay2Hn7ZN4oxHjnHR7fEAe8NhNv3szIUAZ_m-mUkORu1aD_Ezp91xKNqBcOQMwpaoFiF0xHCGm8foVzNFFwttFquarx6dQtoNEbGosWSX4CAAiXVGeDaXeV9sZhRoY0IPCux0eD23Uxc25pkNgk_D2PTSYHRARseYtYMlZlojAo_CBGVXc2YhgpFHERrv47lhic6axvwUkip7ggs0fb4ofCLxxTXMwEqlo2b2EgJBkAibyDuOL8Wj1rR5yHKqJD9gVS5ENtVazw6pxGvvuj2nl1kBQt_L03weM5av7UnY-veVFlrLOnzQKpSspa1u64UnL8KumG1UxnSaoelM9IyFbFB3DiIotZ9PtZLX1en8PFHnRpyVv2FMBfvRSD3QJGxXjHJTj9mahs_udUFn1s8fM39U4xpzhiMUoQR3vMIGJ5ezBg2EbB9NeQt00edJ_2ZkGUxBdk6lFru91k02LR2qFEtIG8LuGJffNFEJXfBUyT8zu8g_7WLsqXMSZtXtgpblWvgda54iEJqtMFLNqL7PUajyqAJP5FYJgkv2BthbEpIWdFEcnGJ35QjW1sMa1D2gy1R",
+            "Platform": "Generic",
+            "Size": 1945
+          },
+          {
+            "DrmType": "SignedNoDrm",
+            "Format": "KEPUB",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9._99RW8IfYUgeD_hFhqIZ5g.ymUJ8uAVVGoq5o0-f4FSMWO6wm8HRu6D7DQuoN-IQbSjcfn4JJplVuxZMaZSEJc_neYIGvLCEWsZjxxGFhu2u92p9n2Sk6405FycpamoVuvPPt_GC26aK6bB4UT3pLxGLvixaL7ahih6i_FM5dSxTiCH1dYmbPQoDtLu59DUffqQPq21LLvxr-99sUdw7zMp7UA4_NqzpQwx_tkrP141mesEnge0_W-PeR1_6q2_hz6XtJ1k3oFKLW2gmaTLiLOHH_xWiWRazp53wG7kSwmhsPe0FubDA_NflJ6BbdcwYQ0G39A18f1rVfK_P69CTjXyV9enibt4tKE3BmBVgMdj87riQz-2i6KcTq2fRhXAjYLYIoIXY0V0dLH5pgJRULvgWYHx9OvnL7hICSNoNDhbilvp6CndBlAz0ahI4dHXLBFDz-RcDzm-bSCjzbqrXRT2Xtu7YcvFHnvXDa0lP3bz3ZehCeAFFf0GwVkFwym7pScBlvUgvpa3flc2cqRLLH53s6TrXr42WLZHxrJD4OquPoX1hO3y9N5lrbU1M3NI4edmHLZ2mb_XcUgDfmYH34QxEh1U3N_ZRaEhroLkuN-WI80Q6ivtJCIpDIAJjKb999QXchD1c6iMXAaA_3drTpOY6tYfzvtFmHxCZd1-PyUWoa2OIkyGfG-vzV5R3SYMfGNLEoFtagAtCaMZZXYG2o53",
+            "Platform": "Android",
+            "Size": 112392
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.u8bJmphtULSOVhhH0nI44w.w75_mfJQA1X0Q6TGSWOkQUw_108SkYBS-P6VkvwhZWWGOPYXdGZqT0uakqJ0UN0QsNXBMyA_JCJPQmvEe0Pmzuo1xTBNo-FdEHU1fUI4rwFdeMLjLJJ4Vj0l9jLN1HDBVRm0X2quqZ-627agZxZ-2aQ0IYaRlbrbPduqNY9LxDxY9lCRFLoqffy84Yax_dwT4NyU0zOj3orASMdaFcaoHZ2ADJompFtZFUX-TYV_g89nABQV3PrNWM-X15vm4pas6sNKMCm5ely7qvP_muQvWZmFjdMsmDVRq2MqUALHnkSaRDbbhvYosgeeBm7JX-u5mrjD5L66pWv4xbPlpMfT25to3A4FP3vG-fP-J_Y3MiGvtOfvTId_PWFd_FcYdcbpDJFCdocGpDuhjSEPyTtW9p_oLH67r1mIZ-B9TZKC1mnXYkjeVCYx53S4-8AxnRA_SdKpSC4FjiXlMlTMh68GZA9myDYWJx3-LLvbsTtcFWcdSsEt3g2kk5OVqd-IXTHfISeo54F_S80mFRuFgZUAWaHJiuWUqQ3lwiUOFGYqAKpeJKnEWS6RcM-1jWQFQyh5ltr-BCxQu4DBRc96gL_2bGV5rgWBAraPtHF1MU23G6yFpl0MellBkvPBTbragfGJDce9rm0DhKQS9wB4Wi9Maw",
+            "Platform": "Android",
+            "Size": 76332
+          }
+        ],
+        "Contributors": [
+          "Romain Mariage"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": 0,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "32c403a5-b6d5-0c97-0000-000000000000"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-02-12T13:30:53.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "29d37759-91ed-3aa3-8d30-eeab651b31a7",
+        "RevisionId": "4dd66b5a-be04-4766-bd07-f8c5ad659f10",
+        "IsHiddenFromArchive": false,
+        "Id": "583ef23d-e30a-4d01-89e6-d936e9f57de5",
+        "Created": "2021-02-12T13:30:53.0000000Z",
+        "LastModified": "2021-02-12T13:30:53.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "583ef23d-e30a-4d01-89e6-d936e9f57de5",
+        "Created": "2021-02-12T13:30:53.0000000Z",
+        "LastModified": "2021-10-10T19:04:36.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2021-02-14T21:17:38.0000000Z",
+          "Status": "Reading",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2021-02-14T21:17:38.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2021-09-13T10:41:34.0000000Z",
+          "SpentReadingMinutes": 548,
+          "RemainingTimeMinutes": 270
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-09-13T10:41:34.0000000Z",
+          "ProgressPercent": 56,
+          "ContentSourceProgressPercent": 20,
+          "Location": {
+            "Value": "kobo.14.1",
+            "Type": "KoboSpan",
+            "Source": "OEBPS/9791032101568-44.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2021-09-13T10:41:34.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "29d37759-91ed-3aa3-8d30-eeab651b31a7",
+        "RevisionId": "4dd66b5a-be04-4766-bd07-f8c5ad659f10",
+        "Publisher": {
+          "Name": "Editions de Fallois",
+          "Imprint": "Editions de Fallois"
+        },
+        "PublicationDate": "2020-05-27T04:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9791032101568",
+        "Genre": "180861c2-21ea-4793-952b-ecd39613adfe",
+        "Slug": "l-enigme-de-la-chambre-622",
+        "CoverImageId": "fe867daf-65d6-43d0-9f81-4ad75b7d63d5",
+        "IsSocialEnabled": true,
+        "WorkId": "155a1bc0-5697-3ba6-b8de-4d1548a39bc2",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Joël Dicker"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "583ef23d-e30a-4d01-89e6-d936e9f57de5",
+        "Title": "L'Énigme de la Chambre 622",
+        "Description": "<p>Une nuit de décembre, un meurtre a lieu au Palace de Verbier, dans les Alpes suisses. L’enquête de police n’aboutira jamais.<br />Des années plus tard, au début de l’été 2018, lorsqu’un écrivain se rend dans ce même hôtel pour y passer des vacances, il est loin d’imaginer qu’il va se retrouver plongé dans cette affaire.<br />Que s’est-il passé dans la chambre 622 du Palace de Verbier?</p><p>Avec la précision d’un maître horloger suisse, Joël Dicker nous emmène enfin au cœur de sa ville ...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "180861c2-21ea-4793-952b-ecd39613adfe",
+          "352a8754-a01d-4628-925f-d4fb14290d03"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "KDRM",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.aaK_6wzuUmjiN6Zc-RA_UA.VeKmzSqMAo5L70ztf9o7NYTd2j3syEVxFdXDyz7tFVO5s8j8WUl-CW0wbQ3Mj-09-gtwYrRJ27VAZ699dFZCCmXjqwo317WiDX_zAPDaM_BdyCnd2d6nAeOyH4xnTKei4wHYOaO8E2GOlF3M9aSgBYIL3F5yDDkmNBiADDvTrm2GiXHftPbSegYoK9Q_e_J2jAbCBztfWHpoejacIbLnnb4puE_Bj9lnvsIHdskel7YqzbkiLrZbzCg4x3vebOHt19RtO0lwNA3jG7FjcTjxB_olZOf0NPBycWrvPzTslMqj-7yw4-xveu_0oI5MHADx8RqiJd_EbE-c1Bd0SqgefJrkM29IMZaseZXX41oI0BiPo8Yk753WYttWvyKr7vv2chuknlFLmCZYD7sAAANzMMZ289M4b_YNpPZsLL3syNunZemv8rYnV83VUPU-CJOpmHsPZeR8AHhAjqaBfhV1wIB4VTDIo8GZQ0BKRaUF67njWsZ__2xfsK2RvJDonakkI_-3Gw-OYijKZ3CLwZ5J81EoUlgNHVPlpIngAdo3j9VBSkmJfEOpI9ZhAlVCiZlnb3hY0kiXZlc87SAqaV_3_RFAKr0KhW0yaewCi6odRtrNyFZccZdBxZSjyumZe4JCzpOJQ9xxtDVQ_h64BkKYN0WhMA9SEqBUpbHvIk5pjpCh5dRdydCYJlxha6yJfmTz",
+            "Platform": "Generic",
+            "Size": 2500611
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.Jvus9f8Fgh5NVFi2jFft0A.R5tr1lMUaetDR6ci3YlC56pGePFn5Sn01_ZOwI36IIpnz_5x3vS_NzM2Aem38QoVc1aOhImfo6SU3alY0d8Atmb5ndMsfHDOGa6i1MkQBXKC0gkEAKfxGn0T5KqZf9De1jFZvULXTrRdZ-n6e6nUmWAnIBp4-2WDb1fy7lB9OxhB_ODWdykaVJoAX0foYbGMqoomCZTJMKmY5LsoSEoZwm1BMDjToPubmmPU_kBSbLoUjztFj5cbhT9TdYWDedIl-ukm2XtyQm3Vdu_n5UhfA53cn0vpgb6aqmh1Td1bLL7Y-rfq_cyexn305LzRp7yW6RyPHNqarvZVbIb0op0rqo7dCrX9OadvguaZneg09Dsjw8iDCAXQ07JA1S81J4IRoVmHOwSX8jbleihCdMkbOoHDNeQDmPoVU9bmxH-o7o5d4y7MNIF3EPCSVXPVZZgobSTRf1tn7OlFgEjdW6_hEW7d-tK1qI3IYqdT0U5N9eZINCGSj0kE7-e-owas7qIyW3ELL7o11_atmlBuhmAuLoYS82nMpeUbB9Vwu94w-QZGoszMkhBAGPqN0m9w4QQt3GcUPrnjlP6CUMJ_d2LpmZZL7ryGXReI_ftPGT5E-Ctgo3AIx7ZJF_H9Ebok2UmD8R-OikRCoofuuLWer1AdBg",
+            "Platform": "Generic",
+            "Size": 739875
+          }
+        ],
+        "Contributors": [
+          "Joël Dicker"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": -1,
+          "CurrencyCode": ""
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "941fe201-a255-dcd6-0000-000000000000"
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2020-07-26T20:40:26.0000000Z"
+        },
+        "IsRemoved": true,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "74941fc7-51f5-3c85-a8d2-559455ac131e",
+        "RevisionId": "50449424-eed6-4d22-b868-b9c6b4b6fa39",
+        "IsHiddenFromArchive": false,
+        "Id": "808a5932-1fee-4fe4-bc7f-efc948398b7a",
+        "Created": "2020-07-26T20:40:26.0000000Z",
+        "LastModified": "2021-02-12T13:36:10.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "808a5932-1fee-4fe4-bc7f-efc948398b7a",
+        "Created": "2020-07-26T20:40:26.0000000Z",
+        "LastModified": "2021-02-12T13:36:10.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2021-02-12T13:36:10.0000000Z",
+          "Status": "Finished",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2020-12-03T22:30:57.0000000Z",
+          "LastTimeFinished": "2021-02-12T13:36:10.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2020-12-28T17:56:34.0000000Z",
+          "SpentReadingMinutes": 1,
+          "RemainingTimeMinutes": 0
+        },
+        "CurrentBookmark": {
+          "LastModified": "2021-02-12T13:36:10.0000000Z",
+          "ProgressPercent": 0,
+          "ContentSourceProgressPercent": 0
+        },
+        "PriorityTimestamp": "2021-02-12T13:36:10.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "74941fc7-51f5-3c85-a8d2-559455ac131e",
+        "RevisionId": "50449424-eed6-4d22-b868-b9c6b4b6fa39",
+        "Publisher": {
+          "Name": "Groupe CB",
+          "Imprint": "La Musardine"
+        },
+        "PublicationDate": "2014-01-30T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "9782364904330",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "69-gages-erotiques-pour-pimenter-votre-vie-sexuelle",
+        "CoverImageId": "7358c324-f629-4cee-9702-eead03598dd6",
+        "IsSocialEnabled": true,
+        "WorkId": "74941fc7-51f5-3c85-a8d2-559455ac131e",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Marc Dannam"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "808a5932-1fee-4fe4-bc7f-efc948398b7a",
+        "Title": "69 gages érotiques pour pimenter votre vie sexuelle",
+        "Description": "<p><strong>Tu as perdu. Voici ton gage !</strong><br />Un gage est une punition. Mais un gage érotique est une punition particulière, émouvante, délicieuse, voire jouissive, autant pour celui des deux partenaires qui l'impose et en bénéficie que pour celui ou celle qui doit s'y livrer.<br />Organisés par niveau (de plus en plus hard...), par sexe, avec des gadgets, déguisés, à l'extérieur ou chez soi, les 69 gages contenus dans ce livre vont vous permettre d'apporter un peu de \" piment \" à ...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "949c64be-6291-4b16-b192-3d9dedcf8602",
+          "dbe331b2-c221-4d72-925b-7036fd462a74",
+          "656c22c1-7438-4609-baed-7f999d3bd647",
+          "433a5b22-213d-466f-9c5d-125276eae564"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "None",
+            "Format": "EPUB_TABLEOFCONTENTS",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.K2A8WOYhxoJemmya5ghB2g.wr2ocgoTbRVuqDqTWyIH8XooqgMwCkURRt31JOlmogcUiZE__fk2-vsusyUlGlKNEhCWaBFrWPOnNj2FK6aGsMJOEB6W9XLNK-PPqzqiI0nTDuYzr4pXoY3E1wQ0iwCcXim0Bb_bnW64ynkVI6x0ayYv0w79Oqtvdz2Xor2U-WPEnV4hDpijqiTQko3zeQVgX3p6tI50PeAplroxFwlL-yF0MAhzvixHGb4mrXUc-70nC2ZCovjPAsCk8elyiWuS_F6ykStGJsQUpxcfP7AeS6Vqk6JIZGoyqhKyMVBFxUwEeFLMWjIGo0uF2A_ziKjbb-5Uqr_b_bbAqDj37VOr-ORMQwafmTeIpwM-BqwxppSNC9-LVhlV_ilrduDFVuY3qJHI287_0Wh8W5CzGBN853SrvBMCaUrHbqJFcAclDgnB14w_o3Swhr7EgwQ4ex2ERFCd8jnIad7F8UxLCzlA68MkjZ7FZv0GT_4Yz_0rNnTHn5nb8JruoyIQ0mXI0F-WTKW3_It8eu9M8tELDhuc9HJwSKtF4gj4klVgJvHVuDMHAIfqGlxJx8LbTCY-RPebKSK1p_0NMIFm_IWhDi4B-w2e9iXtTab7UXEhSVKYtCaD0zf1UZ7SkmbxjZBvQiTrWejVGGKOoZvC2LZuKOv7UC0NCwJmLfQ45uorMYtC4Ed9pRbHv_sG-q3wE7-auW5p",
+            "Platform": "Generic",
+            "Size": 1605
+          },
+          {
+            "DrmType": "KDRM",
+            "Format": "KEPUB",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.qUj2QOAWAJjC1sOze4U7ig.YqHQX0QNc4SMFWpXO_O0Oy256sN8wE06C6DWACPIXdKkMy6TjY6F62fIMwQBzV5zQCfHFO89iEi_mLUBi7e86dj5h7Qg7l71cpZ0T1NBVeubqyyNYNH-dCPvpoY3VDjGjUe_xiu1vpfUVEo19wm_OGExdCoVvc4hDG4O6myXlrmfA_M4oD2SrAv9WcFtEh3QJQW2_tsKIBTv__u1m4MOBzeHH0VVqlSjsLS8gJYzjnWlaOxsy7fdfZFehAwbssiww8O6ZDXZSoRQDEqC23TZNB9VoMGG4-IiJkIYHpRlx0xOf9my-HgMbAl_zYUaDFYw-sfB76-5gBsSmNGgEcZUTdFBFQLYu1TLCB9NlHq2FjwPWo4eSHwgT7U6Il33cz4kEZu2mWUvd7lQluA45XFPyapZIVsBSHt66IZ0nNmewzszM5Hd33mYhuLeM-x5gSVhJ4UioDVFFGQ8LRPbYVypXAXL14twFt1UycbdKBbvpSAnRHSObHfHz9qpBGAB5xHg8wMiMUStQ7upx4yOnrre4BAHDVLIGbevaNnb0FpIsTdeIHMiCMS1jpZIZ2Ur3tiZtRKhIqFNxV4gMWom1gDlD-_9xxOzx_Qi-NKOTq11kqzb3nzXofM0qPoJLKsoozUlldH3827TxFRRIkhEnSb72C45iRZcjQWtGvhesX124QwSpn5GyWkZJb7qFcqYAH_w",
+            "Platform": "Android",
+            "Size": 1060564
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.ocyxpPFXZE7S0DoDPWdk0w.RE3leBjB7hRKRzDHknO1ABoy-HoYMFP2hT3w6lQn1m0xor5BD0eHnm313odH3UuxP669qImV_qbjs0mpgeC1LTXhzz5cB_PQROE34cPLoJPTc3kKDbwl_WRP1LRqSqHJobqsNDrNL_oLdwwemx59raneG7S3Dh-5PWupNTVX-BEHF2E3eQroRG99RHp0X-J8ZG8keMJoBz2Dcr77lFQTx8TpzMpPqDP2mW92lYk1n0GzP4QCiM9XD0vlIZQq_YMZNewRdkjncw0THI3GRw7Jo6wqfzBW6CnyYV4dvOSpJjYrAXZ2UhN1IOjLxLyjBu8VqJvME1O0HM4PuKcK-H1Lw2CQYDOVSHXpe4csVLoyp-ioUknZeXiGnAhxcjB-bUJyeRLtj2yjpP1uBTiaZ3jUKGl1bcXH5uxfTCVrOiZ9mYuNEvkNxdIcwgMdyWrhYTBh5B8OFvpNFx6QHvhPgz4v48nwhi0Jpx1EaXyEVe-BT1o-T_wH8Fd5I-CL9686etBhp6hTe34QxZwykSxtcAMkYGeF1q6U6ZXJjb75VU-lNWJcZThrLnmC94Kj656VgSMyDiKE7dYfw8oWTGEoz4NUlbZDaqCDrXTaaYTzhM2WCUdyv-zinLeUBLIUIAV89ZjvCLDW8SWRfe9VGthTE9pdcA",
+            "Platform": "Android",
+            "Size": 768994
+          }
+        ],
+        "Contributors": [
+          "Marc Dannam"
+        ],
+        "Series": {
+          "Id": "8df9f1b3-1c69-5853-871a-6152a85e7df8",
+          "Name": "Osez"
+        },
+        "CurrentDisplayPrice": {
+          "TotalAmount": 0,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {},
+        "RelatedGroupId": "91040527-b6d8-0c97-0000-000000000000",
+        "Locale": {
+          "LanguageCode": "fre",
+          "ScriptCode": "",
+          "CountryCode": ""
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "ActivePeriod": {
+          "From": "2021-06-04T22:56:06.0000000Z"
+        },
+        "IsRemoved": false,
+        "Status": "Active",
+        "Accessibility": "Full",
+        "CrossRevisionId": "58fda4dc-1ebb-34b3-8128-157eb0ea7783",
+        "RevisionId": "859d5ffa-4565-4316-b50c-a9b5d772d55b",
+        "IsHiddenFromArchive": false,
+        "Id": "52e5beac-3705-490f-8cfc-fa37190cb92b",
+        "Created": "2021-06-04T22:56:07.0000000Z",
+        "LastModified": "2021-06-04T22:56:07.0000000Z",
+        "IsLocked": false,
+        "OriginCategory": "Purchased"
+      },
+      "ReadingState": {
+        "EntitlementId": "52e5beac-3705-490f-8cfc-fa37190cb92b",
+        "Created": "2021-06-04T22:56:07.0000000Z",
+        "LastModified": "2023-05-17T17:31:48.0000000Z",
+        "StatusInfo": {
+          "LastModified": "2022-06-18T14:59:24.0000000Z",
+          "Status": "Reading",
+          "TimesStartedReading": 1,
+          "LastTimeStartedReading": "2022-06-18T14:59:24.0000000Z"
+        },
+        "Statistics": {
+          "LastModified": "2022-06-18T14:59:24.0000000Z",
+          "SpentReadingMinutes": 42,
+          "RemainingTimeMinutes": 23
+        },
+        "CurrentBookmark": {
+          "LastModified": "2022-06-18T14:59:24.0000000Z",
+          "ProgressPercent": 26,
+          "ContentSourceProgressPercent": 25,
+          "Location": {
+            "Value": "kobo.332.1",
+            "Type": "KoboSpan",
+            "Source": "GoogleDoc/363Citationsinspirantespourpasserlaction.xhtml"
+          }
+        },
+        "PriorityTimestamp": "2022-06-18T14:59:24.0000000Z"
+      },
+      "BookMetadata": {
+        "CrossRevisionId": "58fda4dc-1ebb-34b3-8128-157eb0ea7783",
+        "RevisionId": "859d5ffa-4565-4316-b50c-a9b5d772d55b",
+        "Publisher": {
+          "Name": "Boulevard du Succès",
+          "Imprint": "Boulevard du Succès"
+        },
+        "PublicationDate": "2019-03-01T05:00:00.0000000",
+        "Language": "fr",
+        "Isbn": "1230003668719",
+        "Subtitle": "confiance en soi, motivation, succès, richesse, réussite",
+        "Genre": "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+        "Slug": "363-citations-inspirantes-pour-passer-a-l-action",
+        "CoverImageId": "76778494-bc60-4ae0-9758-74fdbc688014",
+        "IsSocialEnabled": true,
+        "WorkId": "58fda4dc-1ebb-34b3-8128-157eb0ea7783",
+        "ExternalIds": [],
+        "IsPreOrder": false,
+        "ContributorRoles": [
+          {
+            "Name": "Boulevard du Succès"
+          }
+        ],
+        "IsInternetArchive": false,
+        "EntitlementId": "52e5beac-3705-490f-8cfc-fa37190cb92b",
+        "Title": "363 Citations Inspirantes pour Passer à l'Action",
+        "Description": "<p>Ce livre est un remède contre le pessimisme et la négativité, c’est un coach personnel pour réveiller le meilleur de vous même:<br />- avec les meilleures citations inspirantes pour atteindre le succès et la richesse<br />- pour faire le plein d’optimisme, de sagesse, et surtout d’enseignements qui résonneront en chacune de vos cellules<br />C’est un livre de motivation pour avoir un mindset de gagnant et avoir confiance en soi. Enfin, c’est un livre de pensées positives qui vou...",
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001",
+          "db4f1101-3325-4d24-a1e5-6a7367b492a8",
+          "949c64be-6291-4b16-b192-3d9dedcf8602",
+          "330a58dd-ff14-459a-882c-74fc41d20759",
+          "0b0cc192-c8ab-4397-a307-ee070a108402",
+          "63e7aa77-6067-4061-832c-1d187632fc32",
+          "0468f60c-97d7-4404-8caf-cd2710c65783",
+          "a2d9e030-4110-4aab-82a7-fa1f6acd46d5"
+        ],
+        "DownloadUrls": [
+          {
+            "DrmType": "SignedNoDrm",
+            "Format": "EPUB3",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiQ2xpZW50QVBJRG93bmxvYWRUb2tlbiJ9.-I7Q-tABdvoRTWfS18f1HA.m011vNYiebN-kU1DS3cTowl4_1bjvouR1Ic3m56NWMnZnS1UZ_9CYlwHb-ODOf81y-T9hoK_63-mA87X8hxrSRlsUojWbHBb6CqTel8BWZ2nu8i0vIXLps1adFG2K3HNAoy_oCj9MCXmdxMTrPNGvNZaBd-fxc94rSbnvPkT1u7haWClZLuOXXtJHf4hL6jPqlR3x2Bmm55P_f8n1NTI16g9XF1hdYfnMNGZ9OrpsF2YKU7PUz35JiEQXT3nwOlCNSYv9sVlo9IuntsQdxfqhryksO7obIFF8sTGYcQGJYPoVqUAtrQRpYXASlWQ0VZ3egfXezRaicmMZA6N9nVLP6gB8RW3iBcrTQuzX4y3guVeTBzgyoVQ-RfZrbwLey95BKfRtf5hAKIFZd2pvgMlBTJP6wWMylQUEKyF-AR0S1bdA52NOIkO5imk7nLHkbfXOiv9ICC9MUjyxj81HCJmus2rhMozYU4oQmiwAYme9lmWzRb-cotokSR_oVop78vGpgc46742VDcdAh41_nfOPXBqQcv8gMKapwvkb1UB_HpSchKR0_mzP5An2qFlFN1zXnBZEt78iXw_gDnH90NG6LsOwGDeUBHoZpmwoVDDRe1Lgy7-EEGl1REZmHsS0WJ_LwpWKsXm7Rn990GZGP0zdjXsj6_pg6rfYFVurKGe59vtMsLJYNYd8arwFfq3llYK",
+            "Platform": "Generic",
+            "Size": 132216
+          },
+          {
+            "DrmType": "None",
+            "Format": "EPUB3_SAMPLE",
+            "Url": "https://storedownloads.kobo.com/download?downloadToken=eyJ0eXAiOjIsInZlciI6IjEiLCJwdHlwIjoiUHJldmlld0Rvd25sb2FkVG9rZW4ifQ.gEUCsUAhezhW35cMFuzB-w.IoE75ZJAQrHPBeSVlmAclr9MNBmhnOIIuobu2ANNpO_fKGkHljYYSphW_wd4BrD6i78QTUFhQqK6BHB97XwZE439m210G91dB_dhDIXmLCyxwa6xapR73NGYAcGVDocrn9Hy0q2tlk8s8bxPOio9uePy4K9ByiexfDYTl9rloZdFaj3-dCQ12aWdIcJeTHdUMZ4lCNPswV8v5BGkeHa6F2SnnB6qbb9GZX3oZHVDI_kLMEt7DqLdd7lYSM9fm9KwozljUekkkjv2aN64_qhRTxTgUnWif794Bkz1yJGR2d6unXrEGml0uPhshKSv6JIqGaRnZd0Fv2m31kQJ2N0rIox9AJ4vEu4PlSH8RTV7KjQKfFfOhiiTMGKmF8ekZaX7EpFJOmxWcvVT5Of5gAMGAfbfJGfxz-80xh3OJ6MEdJEv5wXY2QkkwxDUATF5We6-nK1IVcFumG5sVSbZa2gy5TZxqxun_B2jTpFFtYc12sOoVReZ1RxSKYkqBi9ruwpDtT2S5uia8DReB1qqH61p3e7da1NBG1GD2Zq31BfLxNAGSICm0LD2awlt6OPNo8hXjNewwVN4ljmR42QcM8m2fUpdbO8wJqfa1Qit9e7k24rdbqeHWXesyIkgpxhviRhl0pAQLgGmt5AJQ8uUMms2_g",
+            "Platform": "Generic",
+            "Size": 4791
+          }
+        ],
+        "Contributors": [
+          "Boulevard du Succès"
+        ],
+        "Series": {},
+        "CurrentDisplayPrice": {
+          "TotalAmount": 0,
+          "CurrencyCode": "CHF"
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "IsEligibleForKoboLove": false,
+        "PhoneticPronunciations": {}
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "28521096-ed64-4709-a043-781a0ed0695f",
+        "Name": "programming",
+        "Type": "UserTag",
+        "Created": "2019-10-03T20:31:57.0000000Z",
+        "LastModified": "2019-10-03T20:31:57.0000000Z"
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "2f7b208a-af94-449a-aeb7-8972276a5dee",
+        "Name": "rene barajavel",
+        "Type": "UserTag",
+        "Created": "2019-10-03T20:31:57.0000000Z",
+        "LastModified": "2019-10-03T20:31:57.0000000Z"
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "21da6e43-ff8e-433a-b549-b324bc43fcda",
+        "Name": "agilehola",
+        "Type": "UserTag",
+        "Created": "2019-10-03T20:31:58.0000000Z",
+        "LastModified": "2019-10-03T20:31:58.0000000Z"
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "ab586de3-f678-4664-a1c0-eeaa9203c648",
+        "Name": "letemps",
+        "Type": "UserTag",
+        "Created": "2019-10-03T20:31:57.0000000Z",
+        "LastModified": "2019-10-03T20:31:57.0000000Z"
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "e2f406b2-84d9-4573-8a05-f4588fe0a0d5",
+        "Name": "ReadingList",
+        "Type": "SystemTag",
+        "Items": [
+          {
+            "RevisionId": "da2b88e2-5a3b-49ff-afc1-37b68df99730",
+            "Type": "ProductRevisionTagItem"
+          },
+          {
+            "RevisionId": "ec86fb45-1ea3-497f-aa3f-3669149265f2",
+            "Type": "ProductRevisionTagItem"
+          }
+        ],
+        "Created": "2020-07-26T20:40:26.0000000Z",
+        "LastModified": "2023-05-28T10:12:48.0000000Z"
+      }
+    }
+  },
+  {
+    "NewTag": {
+      "Tag": {
+        "Id": "3e6ce170-49b2-4fa6-95de-fa8a63eb1f6c",
+        "Name": "self improvement",
+        "Type": "UserTag",
+        "Created": "2019-10-03T20:31:57.0000000Z",
+        "LastModified": "2019-10-03T20:31:57.0000000Z"
+      }
+    }
+  }
+]
