@@ -74,6 +74,7 @@ final class MenuBuilder
         if ($this->security->isGranted('ROLE_ADMIN')) {
             $menu->addChild('admin_divider', ['label' => 'Admin'])->setExtra('divider', true);
             $menu->addChild('Admin', ['route' => 'app_user_index', ...$this->defaultAttr])->setExtra('icon', 'gear-fill');
+            $menu->addChild('Kobos', ['route' => 'app_kobo_admin_index', ...$this->defaultAttr])->setExtra('icon', 'gear-fill');
             $menu->addChild('Add Books', ['route' => 'app_book_consume', ...$this->defaultAttr])->setExtra('icon', 'bookmark-plus-fill');
             $menu->addChild('Commands', ['route' => 'app_run_command_manually', ...$this->defaultAttr])->setExtra('icon', 'gear-fill');
         }
