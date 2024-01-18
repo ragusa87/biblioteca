@@ -78,3 +78,7 @@ services:
     App\Kobo\ParamConverter\SyncTokenParamConverter:
         tags:
             - { name: request.param_converter, priority: 100 }
+
+    App\Service\BookFileSystemManager:
+        bind:
+            '$projectDir': '%kernel.project_dir%'

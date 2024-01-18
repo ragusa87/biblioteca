@@ -9,7 +9,6 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Filesystem\Filesystem;
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Symfony\Component\HttpKernel\KernelInterface;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
 class BookFileSystemManager
@@ -20,18 +19,18 @@ class BookFileSystemManager
 
     public const VALID_COVER_EXTENSIONS = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
 
-    public function __construct(private KernelInterface $appKernel, private SluggerInterface $slugger, private LoggerInterface $logger)
+    public function __construct(private string $projectDir, private SluggerInterface $slugger, private LoggerInterface $logger)
     {
     }
 
     public function getBooksDirectory(): string
     {
-        return $this->appKernel->getProjectDir().'/public/books/';
+        return $this->projectDir.'/public/books/';
     }
 
     public function getCoverDirectory(): string
     {
-        return $this->appKernel->getProjectDir().'/public/covers/';
+        return $this->projectDir.'/public/covers/';
     }
 
     /**
@@ -55,6 +54,27 @@ class BookFileSystemManager
         }
 
         return $iterator;
+    }
+
+    public function getBookPath(Book $book): string
+    {
+        return $this->projectDir.'/public/books/'.$book->getBookPath().'/'.$book->getBookFilename();
+    }
+
+    public function getBookSize(Book $book): ?int
+    {
+        if (!$this->fileExist($book)) {
+            return null;
+        }
+
+        $size = filesize($this->getBookPath($book));
+
+        return $size === false ? null : $size;
+    }
+
+    public function fileExist(Book $book): bool
+    {
+        return file_exists($this->getBookPath($book));
     }
 
     /**
