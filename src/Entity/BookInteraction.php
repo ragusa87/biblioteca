@@ -114,4 +114,9 @@ class BookInteraction
     {
         return $this->updated;
     }
+
+    public function setUpdated(?\DateTimeInterface $updated): void
+    {
+        $this->updated = $updated;
+    }
 }

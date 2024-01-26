@@ -1,0 +1,213 @@
+[
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "Accessibility": "Full",
+        "ActivePeriod": {
+          "From": "2024-01-26T13:49:25Z"
+        },
+        "Created": "2024-01-26T13:48:18Z",
+        "CrossRevisionId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "Id": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "IsRemoved": false,
+        "IsHiddenFromArchive": false,
+        "IsLocked": false,
+        "LastModified": "2024-01-26T13:48:18Z",
+        "OriginCategory": "Imported",
+        "RevisionId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "Status": "Active"
+      },
+      "BookMetadata": {
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "CoverImageId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "CrossRevisionId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "CurrentDisplayPrice": {
+          "CurrencyCode": "USD",
+          "TotalAmount": 0
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "Description": "<p>On doit jouer Jules C\u00e9sar dans les ar\u00e8nes de N\u00eemes. Le commissaire Mary re\u00e7oit une lettre - CE SOIR LES CONJURES TUERONT VRAIMENT CESAR. Un assassin, dans l'ombre, monologue. L'acteur Faucon s'\u00e9croule, \u00e0 la fin de la repr\u00e9sentation, devant vingt mille personnes, sous les applaudissements - un merveilleux moment de th\u00e9\u00e2tre. A ceci pr\u00e8s qu'il a \u00e9t\u00e9 r\u00e9ellement tu\u00e9, dans la lueur des projecteurs. Mary enqu\u00eate entre le r\u00e9el et l'illusion, interroge les acteurs qui r\u00e9pondent \u00e0 leur pseudonyme, \u00e0 leur propre nom, \u00e0 celui du personnage dont ils jouent le r\u00f4le. Et voil\u00e0 que Brutus, \u00e0 son tour, ne se rel\u00e8ve pas pour saluer les spectateurs... C'est sur un coup de th\u00e9\u00e2tre, bien s\u00fbr, lui aussi soigneusement mis en sc\u00e8ne, que s'ach\u00e8ve La peau de C\u00e9sar - une passionnante intrigue polici\u00e8re men\u00e9e sur le terrain du simulacre.</p>",
+        "DownloadUrls": [
+          {
+            "Format": "EPUB3",
+            "Size": 167442,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/49/epub",
+            "Platform": "Generic"
+          },
+          {
+            "Format": "EPUB",
+            "Size": 167442,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/49/epub",
+            "Platform": "Generic"
+          }
+        ],
+        "EntitlementId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "ExternalIds": [],
+        "Genre": "00000000-0000-0000-0000-000000000001",
+        "IsEligibleForKoboLove": false,
+        "IsInternetArchive": false,
+        "IsPreOrder": false,
+        "IsSocialEnabled": true,
+        "Language": "fr",
+        "PhoneticPronunciations": {},
+        "PublicationDate": "2011-04-01T00:00:00Z",
+        "Publisher": {
+          "Imprint": "",
+          "Name": null
+        },
+        "RevisionId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "Title": "La peau de C\u00e9sar",
+        "WorkId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "ContributorRoles": [
+          {
+            "Name": "Ren\u00e9 Barjavel"
+          }
+        ],
+        "Contributors": [
+          "Ren\u00e9 Barjavel"
+        ]
+      },
+      "ReadingState": {
+        "EntitlementId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+        "Created": "2024-01-26T13:48:18Z",
+        "LastModified": "2024-01-26T13:49:25Z",
+        "PriorityTimestamp": "2024-01-26T13:49:25Z",
+        "StatusInfo": {
+          "LastModified": "2024-01-26T13:49:25Z",
+          "Status": "ReadyToRead",
+          "TimesStartedReading": 0
+        },
+        "Statistics": {
+          "LastModified": "2024-01-26T13:49:25Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2024-01-26T13:49:25Z"
+        }
+      }
+    }
+  },
+  {
+    "NewEntitlement": {
+      "BookEntitlement": {
+        "Accessibility": "Full",
+        "ActivePeriod": {
+          "From": "2024-01-26T13:49:25Z"
+        },
+        "Created": "2024-01-26T13:48:32Z",
+        "CrossRevisionId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "Id": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "IsRemoved": false,
+        "IsHiddenFromArchive": false,
+        "IsLocked": false,
+        "LastModified": "2024-01-26T13:48:32Z",
+        "OriginCategory": "Imported",
+        "RevisionId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "Status": "Active"
+      },
+      "BookMetadata": {
+        "Categories": [
+          "00000000-0000-0000-0000-000000000001"
+        ],
+        "CoverImageId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "CrossRevisionId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "CurrentDisplayPrice": {
+          "CurrencyCode": "USD",
+          "TotalAmount": 0
+        },
+        "CurrentLoveDisplayPrice": {
+          "TotalAmount": 0
+        },
+        "Description": null,
+        "DownloadUrls": [
+          {
+            "Format": "EPUB3",
+            "Size": 835296,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/50/epub",
+            "Platform": "Generic"
+          },
+          {
+            "Format": "EPUB",
+            "Size": 835296,
+            "Url": "https://books.while.ch/kobo/2a5731f7f153cdc60b76b6aebfb714cf/download/50/epub",
+            "Platform": "Generic"
+          }
+        ],
+        "EntitlementId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "ExternalIds": [],
+        "Genre": "00000000-0000-0000-0000-000000000001",
+        "IsEligibleForKoboLove": false,
+        "IsInternetArchive": false,
+        "IsPreOrder": false,
+        "IsSocialEnabled": true,
+        "Language": "fr",
+        "PhoneticPronunciations": {},
+        "PublicationDate": "2017-05-15T00:00:00Z",
+        "Publisher": {
+          "Imprint": "",
+          "Name": "First"
+        },
+        "RevisionId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "Title": "Trouver son Ikiga\u00ef",
+        "WorkId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "ContributorRoles": [
+          {
+            "Name": "Christie Vanbremeersch"
+          }
+        ],
+        "Contributors": [
+          "Christie Vanbremeersch"
+        ]
+      },
+      "fff": {
+        "EntitlementId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+        "Created": "2024-01-26T13:48:32Z",
+        "LastModified": "2024-01-26T13:49:25Z",
+        "PriorityTimestamp": "2024-01-26T13:49:25Z",
+        "StatusInfo": {
+          "LastModified": "2024-01-26T13:49:25Z",
+          "Status": "ReadyToRead",
+          "TimesStartedReading": 0
+        },
+        "Statistics": {
+          "LastModified": "2024-01-26T13:49:25Z"
+        },
+        "CurrentBookmark": {
+          "LastModified": "2024-01-26T13:49:25Z"
+        }
+      }
+    }
+  },
+  {
+    "ChangedTag": {
+      "Tag": {
+        "Created": "2024-01-17T20:34:43Z",
+        "Id": "3eab8789-3e3d-4229-a4a8-6affe2597df6",
+        "Items": [
+          {
+            "RevisionId": "45b85232-f4e0-4d81-8c78-406499f57b1c",
+            "Type": "ProductRevisionTagItem"
+          },
+          {
+            "RevisionId": "a22c0264-2983-4cbb-a688-27a15ea89fa7",
+            "Type": "ProductRevisionTagItem"
+          },
+          {
+            "RevisionId": "a6f00975-6f8c-476b-b280-04009d6ce9f0",
+            "Type": "ProductRevisionTagItem"
+          },
+          {
+            "RevisionId": "9a83ae45-ef72-47d0-9df3-087192ff82ba",
+            "Type": "ProductRevisionTagItem"
+          }
+        ],
+        "LastModified": "2024-01-26T13:48:39Z",
+        "Name": "myshelf",
+        "Type": "UserTag"
+      }
+    }
+  }
+]
