@@ -58,7 +58,12 @@ class BookFileSystemManager
 
     public function getBookPath(Book $book): string
     {
-        return $this->projectDir.'/public/books/'.$book->getBookPath().'/'.$book->getBookFilename();
+        return $this->getBooksDirectory().$book->getBookPath().'/'.$book->getBookFilename();
+    }
+
+    public function getCoverPath(Book $book): string
+    {
+        return $this->getCoverDirectory().$book->getImagePath().'/'.$book->getImageFilename();
     }
 
     public function getBookSize(Book $book): ?int
@@ -75,6 +80,11 @@ class BookFileSystemManager
     public function fileExist(Book $book): bool
     {
         return file_exists($this->getBookPath($book));
+    }
+
+    public function coverExist(Book $book): bool
+    {
+        return file_exists($this->getCoverPath($book));
     }
 
     /**
