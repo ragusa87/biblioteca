@@ -10,6 +10,7 @@ use App\Kobo\Request\ReadingStateStatusInfo;
 use App\Kobo\Response\StateResponse;
 use App\Repository\BookRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use GuzzleHttp\Exception\GuzzleException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,7 +32,7 @@ class KoboStateController extends AbstractController
     /**
      * Update reading state.
      **/
-    #[Route('/v1/library/{uuid}/state', name: 'api_endpoint_v1_library_sync', requirements: ['uuid' => '^[a-zA-Z0-9\-]+$'], methods: ['PUT'])]
+    #[Route('/v1/library/{uuid}/state', name: 'api_endpoint_state_put', requirements: ['uuid' => '^[a-zA-Z0-9\-]+$'], methods: ['PUT'])]
     public function state(Kobo $kobo, string $uuid, Request $request): Response|JsonResponse
     {
         $book = $this->bookRepository->findByUuidAndKobo($uuid, $kobo);
@@ -68,5 +69,14 @@ class KoboStateController extends AbstractController
         $this->em->flush();
 
         return new StateResponse($book);
+    }
+
+    /**
+     * @throws GuzzleException
+     */
+    #[Route('/v1/library/{uuid}/state', name: 'api_endpoint_v1_getstate', requirements: ['uuid' => '^[a-zA-Z0-9\-]+$'], methods: ['GET'])]
+    public function getState(Kobo $kobo, string $uuid, Request $request): Response|JsonResponse
+    {
+        return $this->koboStoreProxy->proxyOrRedirect($request);
     }
 }
