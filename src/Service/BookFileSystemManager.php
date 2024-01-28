@@ -535,4 +535,16 @@ class BookFileSystemManager
 
         return $book;
     }
+
+    /**
+     * @param array<int, UploadedFile> $files
+     * @return void
+     */
+    public function uploadFilesToConsumeDirectory(array $files): void
+    {
+        $destination = $this->getBooksDirectory().'/consume';
+        foreach ($files as $file) {
+            $file->move($destination, $file->getClientOriginalName());
+        }
+    }
 }
