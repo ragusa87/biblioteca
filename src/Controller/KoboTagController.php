@@ -48,7 +48,7 @@ class KoboTagController extends AbstractController
         $this->logger->debug('Tag delete request', ['request' => $deleteRequest]);
 
         try {
-            $shelf = $this->shelfRepository->findByKoboAndUUid($kobo, $tagId);
+            $shelf = $this->shelfRepository->findByKoboAndUuid($kobo, $tagId);
             if (null === $shelf) {
                 throw $this->createNotFoundException(sprintf('Shelf with uuid %s not found', $tagId));
             }
@@ -73,8 +73,8 @@ class KoboTagController extends AbstractController
     {
         try {
             $content = $request->getContent();
-            /** @var array<string,string|null> $data */
-            $data = $content === null || trim($content) === '' ? null : json_decode($request->getContent(), true, 512, JSON_THROW_ON_ERROR);
+            /** @var array<string,string|null>|null $data */
+            $data = trim($content) === '' ? null : json_decode($request->getContent(), true, 512, JSON_THROW_ON_ERROR);
         } catch (\JsonException $e) {
             throw new BadRequestException('Invalid JSON', $e->getCode(), $e);
         }
@@ -87,19 +87,18 @@ class KoboTagController extends AbstractController
                 $this->logger->debug('Removing kobo from shelf', ['shelf' => $shelf, 'kobo' => $kobo]);
                 $shelf->removeKobo($kobo);
                 $this->shelfRepository->flush();
+
+                return new JsonResponse(['deleted'], 200);
             }
             if ($this->koboStoreProxy->isEnabled()) {
                 $this->logger->debug('Proxying request to delete tag {id}', ['id' => $tagId]);
 
                 return $this->koboStoreProxy->proxy($request);
             }
-
-            return new JsonResponse([], 404);
         }
 
         if (null === $shelf) {
-            // TODO Create shelf with this name assigned to this kobo/user
-            throw new NotFoundHttpException(sprintf('Shelf with name %s not found', $name));
+            throw new NotFoundHttpException(sprintf('Shelf %s not found', $name ?? $tagId));
         }
 
         // TODO Add items to shelf
@@ -111,7 +110,7 @@ class KoboTagController extends AbstractController
     private function findShelfByNameOrTagId(Kobo $kobo, ?string $name, ?string $tagId): ?Shelf
     {
         if ($tagId !== null) {
-            return $this->shelfRepository->findByKoboAndId($kobo, $tagId);
+            return $this->shelfRepository->findByKoboAndUuid($kobo, $tagId);
         }
 
         if ($name === null || trim($name) === '') {
