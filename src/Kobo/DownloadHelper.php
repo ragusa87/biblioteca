@@ -32,6 +32,11 @@ class DownloadHelper
         return $this->fileSystemManager->getBookSize($book) ?? 0;
     }
 
+    public function getCoverSize(Book $book): int
+    {
+        return $this->fileSystemManager->getCoverSize($book) ?? 0;
+    }
+
     public function isEpub3(Book $book): bool
     {
         return $book->getExtension() === 'epub3' || $this->readEpubVersionIs3($book) === true;
@@ -67,8 +72,7 @@ class DownloadHelper
         }, 200);
 
         match ($book->getImageExtension()) {
-            'jpg' => $response->headers->set('Content-Type', 'image/jpeg'),
-            'jpeg' => $response->headers->set('Content-Type', 'image/jpeg'),
+            'jpg', 'jpeg' => $response->headers->set('Content-Type', 'image/jpeg'),
             'png' => $response->headers->set('Content-Type', 'image/png'),
             'gif' => $response->headers->set('Content-Type', 'image/gif'),
             default => $response->headers->set('Content-Type', 'application/octet-stream'),
@@ -132,5 +136,10 @@ class DownloadHelper
         } finally {
             $zip->close();
         }
+    }
+
+    public function coverExist(Book $book): bool
+    {
+        return $this->fileSystemManager->coverExist($book);
     }
 }

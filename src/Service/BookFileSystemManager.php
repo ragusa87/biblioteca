@@ -84,6 +84,17 @@ class BookFileSystemManager
         return $size === false ? null : $size;
     }
 
+    public function getCoverSize(Book $book): ?int
+    {
+        if (!$this->coverExist($book)) {
+            return null;
+        }
+
+        $size = filesize($this->getCoverFilename($book));
+
+        return $size === false ? null : $size;
+    }
+
     public function fileExist(Book $book): bool
     {
         $path = $this->getBookFilename($book);
@@ -95,7 +106,7 @@ class BookFileSystemManager
     {
         $cover = $this->getCoverFilename($book);
 
-        return $cover === null ? false : file_exists($cover);
+        return !($cover === null) && file_exists($cover);
     }
 
     /**
