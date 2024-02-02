@@ -2,11 +2,16 @@
 
 namespace App\Tests\Controller;
 
+use App\DataFixtures\BookFixture;
+use App\Entity\Book;
 use App\Entity\Kobo;
 use App\Entity\User;
+use App\Service\BookFileSystemManager;
 use Doctrine\ORM\EntityManagerInterface;
+use Psr\Log\NullLogger;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 abstract class AbstractKoboControllerTest  extends WebTestCase
 {
@@ -39,6 +44,12 @@ abstract class AbstractKoboControllerTest  extends WebTestCase
         return $this->kobo;
     }
 
+    private function getBook(): Book
+    {
+        // @phpstan-ignore-next-line
+        return $this->getEntityManager()->getRepository(Book::class)->find(BookFixture::ID);
+    }
+
     /**
      * @throws \JsonException
      */
@@ -66,6 +77,25 @@ abstract class AbstractKoboControllerTest  extends WebTestCase
             throw new \RuntimeException('Unable to find a Kobo, please load fixtures');
         }
         return $kobo;
+    }
+
+    protected function injectFakeFileSystemManager(): void
+    {
+        $fixtureBookPath = realpath(__DIR__.'/../Resources/')."/";
+        $mockBuilder = $this->getMockBuilder(BookFileSystemManager::class);
+        $mock =  $mockBuilder->setConstructorArgs([
+            realpath(__DIR__.'/../Resources/'),
+            $this->createMock(SluggerInterface::class),
+            new NullLogger(),
+        ])
+            ->onlyMethods(['getBooksDirectory', 'getCoverDirectory'])
+            ->enableProxyingToOriginalMethods()
+            ->getMock();
+        $mock->expects(self::any())->method('getBooksDirectory')->willReturn($fixtureBookPath);
+        $mock->expects(self::any())->method('getCoverDirectory')->willReturn($fixtureBookPath);
+
+        self::assertSame(realpath(__DIR__.'/../Resources/').'/books/TheOdysses.epub', $mock->getBookFilename($this->getBook()), "Faking Filesystem failed");
+        self::getContainer()->set(BookFileSystemManager::class, $mock);
     }
 
 }

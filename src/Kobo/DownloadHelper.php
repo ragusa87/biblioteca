@@ -22,9 +22,9 @@ class DownloadHelper
     {
     }
 
-    protected function getBookPath(Book $book): string
+    protected function getBookFilename(Book $book): string
     {
-        return $this->fileSystemManager->getBookPath($book);
+        return $this->fileSystemManager->getBookFilename($book);
     }
 
     public function getSize(Book $book): int
@@ -58,8 +58,8 @@ class DownloadHelper
      */
     public function getCoverResponse(Book $book, int $width, int $height, bool $grayscale = false, bool $asAttachement = true): StreamedResponse
     {
-        $coverPath = $this->fileSystemManager->getCoverPath($book);
-        if (false === $this->fileSystemManager->coverExist($book)) {
+        $coverPath = $this->fileSystemManager->getCoverFilename($book);
+        if ($coverPath === null || false === $this->fileSystemManager->coverExist($book)) {
             throw new BookFileNotFound($coverPath);
         }
         $response = new StreamedResponse(function () use ($coverPath, $width, $height, $grayscale) {
@@ -87,7 +87,7 @@ class DownloadHelper
 
     public function getResponse(Book $book): StreamedResponse
     {
-        $bookPath = $this->getBookPath($book);
+        $bookPath = $this->getBookFilename($book);
         if (false === $this->exists($book)) {
             throw new BookFileNotFound($bookPath);
         }
@@ -106,6 +106,8 @@ class DownloadHelper
         $response->headers->set('Content-Disposition',
             sprintf('attachment; filename="%s"; filename*=UTF-8\'\'%s', $simpleName, $encodedFilename));
 
+        $response->headers->set('Content-Length', (string) $this->getSize($book));
+
         return $response;
     }
 
@@ -113,7 +115,7 @@ class DownloadHelper
     {
         $zip = new \ZipArchive();
 
-        if ($zip->open($this->getBookPath($book)) !== true) {
+        if ($zip->open($this->getBookFilename($book)) !== true) {
             $this->logger->debug('Unable to open epub file to detect the format', ['book' => $book->getId()]);
 
             return null;

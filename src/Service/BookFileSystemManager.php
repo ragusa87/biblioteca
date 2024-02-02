@@ -19,18 +19,18 @@ class BookFileSystemManager
 
     public const VALID_COVER_EXTENSIONS = ['jpg', 'jpeg', 'png', 'gif', 'webp'];
 
-    public function __construct(private string $projectDir, private SluggerInterface $slugger, private LoggerInterface $logger)
+    public function __construct(private string $publicDir, private SluggerInterface $slugger, private LoggerInterface $logger)
     {
     }
 
     public function getBooksDirectory(): string
     {
-        return $this->projectDir.'/public/books/';
+        return $this->publicDir.'/books/';
     }
 
     public function getCoverDirectory(): string
     {
-        return $this->projectDir.'/public/covers/';
+        return $this->publicDir.'/covers/';
     }
 
     /**
@@ -56,14 +56,21 @@ class BookFileSystemManager
         return $iterator;
     }
 
-    public function getBookPath(Book $book): string
+    public function getBookFilename(Book $book): string
     {
-        return $this->getBooksDirectory().$book->getBookPath().'/'.$book->getBookFilename();
+        $paths = [$this->getBooksDirectory(), $book->getBookPath(), $book->getBookFilename(), $book->getExtension()];
+
+        return $this->handlePath($paths);
     }
 
-    public function getCoverPath(Book $book): string
+    public function getCoverFilename(Book $book): ?string
     {
-        return $this->getCoverDirectory().$book->getImagePath().'/'.$book->getImageFilename();
+        $paths = [$this->getCoverDirectory(), $book->getImagePath(), $book->getImageFilename(), $book->getImageExtension()];
+        if (in_array(null, $paths, true)) {
+            return null;
+        }
+
+        return $this->handlePath($paths);
     }
 
     public function getBookSize(Book $book): ?int
@@ -72,19 +79,23 @@ class BookFileSystemManager
             return null;
         }
 
-        $size = filesize($this->getBookPath($book));
+        $size = filesize($this->getBookFilename($book));
 
         return $size === false ? null : $size;
     }
 
     public function fileExist(Book $book): bool
     {
-        return file_exists($this->getBookPath($book));
+        $path = $this->getBookFilename($book);
+
+        return file_exists($path);
     }
 
     public function coverExist(Book $book): bool
     {
-        return file_exists($this->getCoverPath($book));
+        $cover = $this->getCoverFilename($book);
+
+        return $cover === null ? false : file_exists($cover);
     }
 
     /**
@@ -576,5 +587,24 @@ class BookFileSystemManager
         foreach ($files as $file) {
             $file->move($destination, $file->getClientOriginalName());
         }
+    }
+
+    /**
+     * @param array{0: string, 1: string, 2: string, 3: string} $paths
+     * @return string
+     */
+    private function handlePath(array $paths): string
+    {
+        $base = array_shift($paths);
+        $paths = array_map(fn ($item) => ltrim($item, '/'), $paths);
+        $paths = array_map(fn ($item) => rtrim($item, '/'), $paths);
+
+        $result = sprintf('%s/%s/%s.%s', $base, ...$paths);
+
+        do {
+            $result = str_replace('//', '/', $result);
+        } while (str_contains($result, '//'));
+
+        return $result;
     }
 }

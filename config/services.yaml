@@ -81,4 +81,4 @@ services:
 
     App\Service\BookFileSystemManager:
         bind:
-            '$projectDir': '%kernel.project_dir%'
+            '$publicDir': '%kernel.project_dir%/public'
