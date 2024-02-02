@@ -54,3 +54,7 @@ services:
     App\Service\BookSearch:
        arguments:
            $autocompleteBookFinder: '@typesense.specificfinder.books.books_autocomplete'
+
+    App\Kobo\ParamConverter\SyncTokenParamConverter:
+        tags:
+            - { name: request.param_converter, priority: 100 }
