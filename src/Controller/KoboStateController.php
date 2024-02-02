@@ -15,6 +15,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 
@@ -77,6 +78,9 @@ class KoboStateController extends AbstractController
     #[Route('/v1/library/{uuid}/state', name: 'api_endpoint_v1_getstate', requirements: ['uuid' => '^[a-zA-Z0-9\-]+$'], methods: ['GET'])]
     public function getState(Kobo $kobo, string $uuid, Request $request): Response|JsonResponse
     {
-        return $this->koboStoreProxy->proxyOrRedirect($request);
+        if ($this->koboStoreProxy->isEnabled()) {
+            return $this->koboStoreProxy->proxyOrRedirect($request);
+        }
+        throw new HttpException(200, 'Not implemented');
     }
 }
