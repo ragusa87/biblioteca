@@ -13,6 +13,7 @@ use Deviantintegral\Har\Request;
 use Deviantintegral\Har\Response;
 use Deviantintegral\Har\Serializer;
 use Deviantintegral\Har\Timings;
+use JMS\Serializer\Exception\RuntimeException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Log\LoggerInterface;
@@ -75,7 +76,11 @@ class HarWriter
     protected function getHar(string $filename): Har
     {
         if (file_exists($filename)) {
-            return (new Serializer())->deserializeHar((string) file_get_contents($filename));
+            try {
+                return (new Serializer())->deserializeHar((string) file_get_contents($filename));
+            } catch (RuntimeException $e) {
+                $this->logger->error(sprintf('Error reading HAR file %s: %s. Starting new..', $filename, $e->getMessage()));
+            }
         }
 
         $har = new Har();
