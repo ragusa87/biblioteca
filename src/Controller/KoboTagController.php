@@ -93,7 +93,12 @@ class KoboTagController extends AbstractController
             if ($this->koboStoreProxy->isEnabled()) {
                 $this->logger->debug('Proxying request to delete tag {id}', ['id' => $tagId]);
 
-                return $this->koboStoreProxy->proxy($request);
+                $proxyResponse = $this->koboStoreProxy->proxy($request);
+                if ($proxyResponse->getStatusCode() === 404) {
+                    return new JsonResponse(['unable to delete tag, skipped.'], 200);
+                }
+
+                return $proxyResponse;
             }
         }
 
