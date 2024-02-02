@@ -45,7 +45,7 @@ class DownloadHelper
     public function getUrlForKobo(Book $book, Kobo $kobo): string
     {
         return $this->urlGenerator->generate('app_kobodownload', [
-             'bookId' => $book->getId(),
+             'id' => $book->getId(),
              'accessKey' => $kobo->getAccessKey(),
              'extension' => $book->getExtension(),
          ], UrlGeneratorInterface::ABSOLUTE_URL);
