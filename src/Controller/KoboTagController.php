@@ -72,20 +72,29 @@ class KoboTagController extends AbstractController
     public function tags(Request $request, Kobo $kobo, string $tagId = null): Response
     {
         try {
+            $content = $request->getContent();
             /** @var array<string,string|null> $data */
-            $data = json_decode($request->getContent(), true, 512, JSON_THROW_ON_ERROR);
+            $data = $content === null || trim($content) === '' ? null : json_decode($request->getContent(), true, 512, JSON_THROW_ON_ERROR);
         } catch (\JsonException $e) {
             throw new BadRequestException('Invalid JSON', $e->getCode(), $e);
         }
         $name = (string) ($data['Name'] ?? null);
+        $name = trim($name) === '' ? null : $name;
         $shelf = $this->findShelfByNameOrTagId($kobo, $name, $tagId);
 
         if ($request->isMethod('DELETE')) {
             if ($shelf !== null) {
-                // TODO Delete shelf if it's not null
+                $this->logger->debug('Removing kobo from shelf', ['shelf' => $shelf, 'kobo' => $kobo]);
+                $shelf->removeKobo($kobo);
+                $this->shelfRepository->flush();
+            }
+            if ($this->koboStoreProxy->isEnabled()) {
+                $this->logger->debug('Proxying request to delete tag {id}', ['id' => $tagId]);
+
+                return $this->koboStoreProxy->proxy($request);
             }
 
-            return new JsonResponse([], 405);
+            return new JsonResponse([], 404);
         }
 
         if (null === $shelf) {

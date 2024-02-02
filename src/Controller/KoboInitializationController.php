@@ -34,7 +34,7 @@ class KoboInitializationController extends AbstractController
         $this->logger->info('Initialization request');
 
         // Force proxy response no matter what
-        if($this->koboProxyConfiguration->forceProxyResponseOnInitialization()) {
+        if ($this->koboProxyConfiguration->forceProxyResponseOnInitialization()) {
             return $this->koboStoreProxy->proxy($request);
         }
 
