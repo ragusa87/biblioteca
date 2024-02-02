@@ -58,14 +58,14 @@ class BookFileSystemManager
 
     public function getBookFilename(Book $book): string
     {
-        $paths = [$this->getBooksDirectory(), $book->getBookPath(), $book->getBookFilename(), $book->getExtension()];
+        $paths = [$this->getBooksDirectory(), $book->getBookPath(), $book->getBookFilename()];
 
         return $this->handlePath($paths);
     }
 
     public function getCoverFilename(Book $book): ?string
     {
-        $paths = [$this->getCoverDirectory(), $book->getImagePath(), $book->getImageFilename(), $book->getImageExtension()];
+        $paths = [$this->getCoverDirectory(), $book->getImagePath(), $book->getImageFilename()];
         if (in_array(null, $paths, true)) {
             return null;
         }
@@ -90,7 +90,8 @@ class BookFileSystemManager
             return null;
         }
 
-        $size = filesize($this->getCoverFilename($book));
+        $filename = $this->getCoverFilename($book);
+        $size = $filename === null ? false : filesize($filename);
 
         return $size === false ? null : $size;
     }
@@ -601,7 +602,7 @@ class BookFileSystemManager
     }
 
     /**
-     * @param array{0: string, 1: string, 2: string, 3: string} $paths
+     * @param array{0: string, 1: string, 2: string} $paths
      * @return string
      */
     private function handlePath(array $paths): string
@@ -610,7 +611,7 @@ class BookFileSystemManager
         $paths = array_map(fn ($item) => ltrim($item, '/'), $paths);
         $paths = array_map(fn ($item) => rtrim($item, '/'), $paths);
 
-        $result = sprintf('%s/%s/%s.%s', $base, ...$paths);
+        $result = sprintf('%s/%s/%s', $base, ...$paths);
 
         do {
             $result = str_replace('//', '/', $result);
