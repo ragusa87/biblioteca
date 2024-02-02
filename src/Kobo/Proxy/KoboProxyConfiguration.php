@@ -272,4 +272,9 @@ class KoboProxyConfiguration
 
         return $this;
     }
+
+    public function forceProxyResponseOnInitialization():bool
+    {
+        return true;
+    }
 }
