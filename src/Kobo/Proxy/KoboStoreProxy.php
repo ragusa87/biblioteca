@@ -26,7 +26,7 @@ class KoboStoreProxy
 {
     use KoboHeaderFilterTrait;
 
-    public function __construct(protected KoboProxyConfiguration $configuration, protected LoggerInterface $proxyLogger, protected KoboTokenExtractor $tokenExtractor)
+    public function __construct(protected KoboProxyLoggerFactory $koboProxyLoggerFactory, protected KoboProxyConfiguration $configuration, protected LoggerInterface $proxyLogger, protected KoboTokenExtractor $tokenExtractor)
     {
     }
 
@@ -92,9 +92,12 @@ class KoboStoreProxy
         $config = $this->getConfig($config);
         $psrRequest = $this->convertRequest($request, $hostname);
 
+        $accessToken = $this->tokenExtractor->extractAccessToken($request) ?? 'unknown';
+
         $client = new Client();
         $psrResponse = $client->send($psrRequest, [
             'base_uri' => $hostname,
+            'handler' => $this->koboProxyLoggerFactory->createStack($accessToken),
             'http_errors' => false,
             'connect_timeout' => 5,
             ] + $config
@@ -140,6 +143,7 @@ class KoboStoreProxy
 
         return $client->sendAsync($psrRequest, [
             'base_uri' => $hostname,
+            'handler' => $this->koboProxyLoggerFactory->createStack($accessToken),
             'http_errors' => false,
             'connect_timeout' => 5,
             'stream' => $streamAllowed,
