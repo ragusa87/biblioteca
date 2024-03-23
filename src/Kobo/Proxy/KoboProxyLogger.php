@@ -66,7 +66,7 @@ class KoboProxyLogger
         };
     }
 
-    private function log(RequestInterface $request, ResponseInterface $response = null, \Throwable $error = null): void
+    private function log(RequestInterface $request, ?ResponseInterface $response = null, ?\Throwable $error = null): void
     {
         $this->logger->info(sprintf('Proxied: %s', (string) $request->getUri()), [
             'method' => $request->getMethod(),

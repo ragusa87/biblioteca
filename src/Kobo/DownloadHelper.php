@@ -80,6 +80,9 @@ class DownloadHelper
 
         if ($asAttachement) {
             $filename = $book->getImageFilename();
+            if ($filename === null) {
+                return $response;
+            }
             $encodedFilename = rawurlencode($filename);
             $simpleName = rawurlencode(sprintf('book-cover--%s-%s', $book->getId(), preg_replace('/[^a-zA-Z0-9\.\-_]/', '_', $filename)));
             $response->headers->set('Content-Disposition',

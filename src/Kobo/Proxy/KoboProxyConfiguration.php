@@ -85,11 +85,6 @@ class KoboProxyConfiguration
         return $this->isDebugHar;
     }
 
-    public function isBlacklistedForEveryWhere(Request $request): bool
-    {
-        return false;
-    }
-
     public function setUseRedirect(bool $useRedirect): KoboProxyConfiguration
     {
         $this->useRedirect = $useRedirect;

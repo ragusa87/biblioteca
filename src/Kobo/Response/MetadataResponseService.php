@@ -35,7 +35,7 @@ class MetadataResponseService
         return $response;
     }
 
-    public function fromBook(Book $book, Kobo $kobo, SyncToken $syncToken = null): array
+    public function fromBook(Book $book, Kobo $kobo, ?SyncToken $syncToken = null): array
     {
         $data = [
             'Categories' => ['00000000-0000-0000-0000-000000000001'],

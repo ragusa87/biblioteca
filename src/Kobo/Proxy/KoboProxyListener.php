@@ -29,7 +29,7 @@ class KoboProxyListener
     {
         // If the proxy is disabled, we don't need to do anything
         // Except if the request is blacklisted (Ex: initialisation)
-        if ($this->configuration->useProxyEverywhere() === false || $this->configuration->isBlacklistedForEveryWhere($event->getRequest())) {
+        if ($this->configuration->useProxyEverywhere() === false) {
             return;
         }
 

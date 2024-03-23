@@ -69,7 +69,7 @@ class KoboTagController extends AbstractController
 
     #[Route('/v1/library/tags')]
     #[Route('/v1/library/tags/{tagId}')]
-    public function tags(Request $request, Kobo $kobo, string $tagId = null): Response
+    public function tags(Request $request, Kobo $kobo, ?string $tagId = null): Response
     {
         try {
             $content = $request->getContent();

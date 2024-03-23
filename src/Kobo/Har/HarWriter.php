@@ -33,7 +33,7 @@ class HarWriter
     /**
      * @throws \JsonException
      */
-    public function write(string $filename, RequestInterface|\Symfony\Component\HttpFoundation\Request $request, ResponseInterface|\Symfony\Component\HttpFoundation\Response $response = null, \Throwable $error = null): void
+    public function write(string $filename, RequestInterface|\Symfony\Component\HttpFoundation\Request $request, ResponseInterface|\Symfony\Component\HttpFoundation\Response|null $response = null, ?\Throwable $error = null): void
     {
         @mkdir(dirname($filename));
         $har = $this->getHar($filename);
