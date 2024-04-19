@@ -200,11 +200,13 @@ class BookController extends AbstractController
 
         $delete = $request->get('delete');
         if ($delete !== null) {
+            /** @var \SplFileInfo $bookFile */
             foreach ($bookFiles as $bookFile) {
-                if ($bookFile->getRealPath() !== $delete) {
+                $realPath = $bookFile->getRealPath();
+                if ($realPath === false || $realPath !== $delete) {
                     continue;
                 }
-                unlink($bookFile->getRealPath());
+                @unlink($realPath);
                 $this->addFlash('success', 'Book '.$bookFile->getFilename().' deleted');
 
                 return $this->redirectToRoute('app_book_consume');
