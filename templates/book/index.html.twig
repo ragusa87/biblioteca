@@ -128,9 +128,26 @@
                         </td>
                     </tr>
                 {% endif %}
+
+
+
                 <tr>
-                    <th>{{ 'verified'|trans }}</th><td>{{ component('InlineEditBook', {'book':book, 'field':'verified'}) }}</td>
+                    <th>{{ 'Number of pages'|trans }}</th>
+                    <td>
+                        {{ component('InlineEditBook', {'book':book, 'field':'pageNumber'}) }}
+                    </td>
                 </tr>
+                <tr>
+                    <th>{{ 'UUID'|trans }}</th>
+                    <td>{{ book.uuid }}</td>
+                </tr>
+
+
+                <tr>
+                    <th>{{ 'verified'|trans }}</th>
+                    <td>{{ component('InlineEditBook', {'book':book, 'field':'verified'}) }}</td>
+                </tr>
+
 
 
             </table>
