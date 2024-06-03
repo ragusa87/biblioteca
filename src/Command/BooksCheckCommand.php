@@ -5,6 +5,7 @@ namespace App\Command;
 use App\Entity\Book;
 use App\Repository\BookRepository;
 use App\Service\BookFileSystemManager;
+use Kiwilan\Ebook\Ebook;
 use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
@@ -46,6 +47,19 @@ class BooksCheckCommand extends Command
                 $this->bookRepository->flush();
             } catch (\Exception $e) {
                 $io->warning($e->getMessage());
+            }
+            // Set page number
+            if ($book->getPageNumber() === 0 || $book->getPageNumber() === null) {
+                try {
+                    $file = $this->fileSystemManager->getBookFile($book);
+                    $ebook = Ebook::read($file->getRealPath());
+                    if ($ebook !== null) {
+                        $book->setPageNumber($ebook->getPagesCount());
+                        $this->bookRepository->flush();
+                    }
+                } catch (\Exception $e) {
+                    $io->warning($e->getMessage());
+                }
             }
 
             $progressBar->advance();
