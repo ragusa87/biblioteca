@@ -1,0 +1,94 @@
+{% extends themedTemplate('bare.html.twig') %}
+
+{% block title %}{{ book.authors|first }} {% if book.serie is not null %}> {{ book.serie }} #{{ book.serieIndex }} {% endif %}> {{ book.title }}{% endblock %}
+
+{% block stylesheets %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script src="https://futurepress.github.io/epub.js/dist/epub.js"></script>
+    <style>
+        .arrow{
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 12em;
+            text-align: center;
+            padding: 5px;
+            text-decoration: none;
+        }
+        .arrow:hover{
+            background-color: blue;
+        }
+
+    </style>
+    {{ parent() }}
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        var params = URLSearchParams && new URLSearchParams(document.location.search.substring(1));
+        var currentSectionIndex = (params && params.get("loc")) ? params.get("loc") : undefined;
+        var currentCfi = (params && params.get("cfi")) ? params.get("cfi") : undefined;
+        var book = ePub("{{ file }}");
+        var rendition = book.renderTo("area", {
+            flow: "paginated",
+            spreader: "none"
+        });
+        // Fixme: currentCfi has no effect
+        var displayed = rendition.display(currentSectionIndex, currentCfi);
+        rendition.on('relocated', function(location){
+            history.pushState({href: location.start.href}, document.title, "?loc=" + location.start.href + "&cfi=" + location.start.cfi);
+        });
+
+        book.ready.then(() => {
+            document.getElementById("loader").style.display = "none";
+            var next = document.getElementById("next");
+            next.addEventListener("click", function(e){
+                book.package.metadata.direction === "rtl" ? rendition.prev() : rendition.next();
+                e.preventDefault();
+            }, false);
+
+            var prev = document.getElementById("prev");
+            prev.addEventListener("click", function(e){
+                book.package.metadata.direction === "rtl" ? rendition.next() : rendition.prev();
+                e.preventDefault();
+            }, false);
+
+            var keyListener = function(e){
+                // Left Key
+                if ((e.keyCode || e.which) === 37) {
+                    book.package.metadata.direction === "rtl" ? rendition.next() : rendition.prev();
+                }
+                // Right Key
+                if ((e.keyCode || e.which) === 39) {
+                    book.package.metadata.direction === "rtl" ? rendition.prev() : rendition.next();
+                }
+            };
+
+            rendition.on("keyup", keyListener);
+            document.addEventListener("keyup", keyListener, false);
+        })
+
+
+    </script>
+    {{ parent() }}
+{% endblock %}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row g-0">
+            <div class="col-1">
+                <a id="prev" href="#prev" class="arrow">‹</a>
+            </div>
+
+            <div class="col-10">
+                <div id="area" style="width: 100%; height: 100%; min-height: 95vh;">
+                    <p id="loader">Loading...</p>
+                </div>
+            </div>
+
+            <div class="col-1">
+                <a id="next" href="#next" class="arrow">›</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
