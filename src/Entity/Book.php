@@ -113,12 +113,19 @@ class Book
     #[ORM\OneToMany(mappedBy: 'book', targetEntity: KoboSyncedBook::class, cascade: ['remove'], orphanRemoval: true)]
     private Collection $koboSyncedBooks;
 
+    /**
+     * @var Collection<int, BookFormat>
+     */
+    #[ORM\OneToMany(mappedBy: 'book', targetEntity: BookFormat::class, orphanRemoval: true)]
+    private Collection $bookFormats;
+
     public function __construct()
     {
         $this->bookInteractions = new ArrayCollection();
         $this->shelves = new ArrayCollection();
         $this->uuid = $this->generateUuid();
         $this->koboSyncedBooks = new ArrayCollection();
+        $this->bookFormats = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -553,6 +560,47 @@ class Book
     public function setUuid(?string $uuid): self
     {
         $this->uuid = $uuid;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, BookFormat>
+     */
+    public function getBookFormats(): Collection
+    {
+        return $this->bookFormats;
+    }
+
+    public function hasFormat(string $format): bool
+    {
+        foreach ($this->bookFormats as $bookFormat) {
+            if ($bookFormat->getType() === $format) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    public function addBookFormat(BookFormat $bookFormat): static
+    {
+        if (!$this->bookFormats->contains($bookFormat)) {
+            $this->bookFormats->add($bookFormat);
+            $bookFormat->setBook($this);
+        }
+
+        return $this;
+    }
+
+    public function removeBookFormat(BookFormat $bookFormat): static
+    {
+        if ($this->bookFormats->removeElement($bookFormat)) {
+            // set the owning side to null (unless already changed)
+            if ($bookFormat->getBook() === $this) {
+                $bookFormat->setBook(null);
+            }
+        }
 
         return $this;
     }

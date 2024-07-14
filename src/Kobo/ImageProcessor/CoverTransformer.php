@@ -98,7 +98,7 @@ class CoverTransformer
         $y = ($maxHeight - $newHeight) / 2;
 
         // Copy the original image onto the new image and center it
-        imagecopyresampled($image, $originalImage, (int) $x, (int) $y, 0, 0, $newWidth, $newHeight, $originalWidth, $originalHeight);
+        imagecopyresampled($image, $originalImage, (int) $x, (int) $y, 0, 0, (int) $newWidth, $newHeight, $originalWidth, $originalHeight);
 
         if ($grayscale) {
             imagefilter($image, IMG_FILTER_GRAYSCALE);
