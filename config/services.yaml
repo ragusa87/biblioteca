@@ -103,3 +103,10 @@ services:
       tags:
         - { name: kernel.event_listener, event: kernel.request, method: onKernelRequest, priority: 130 }
 
+    App\Service\BookFormatStorage:
+        arguments:
+            $storageDir: '%kernel.project_dir%/public/alternatives'
+
+    App\Service\BookConverter:
+        bind:
+            $cacheDir: '%kernel.cache_dir%/book_converter'

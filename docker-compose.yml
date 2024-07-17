@@ -30,6 +30,17 @@ services:
       - 'traefik.http.routers.biblioteca.middlewares=https_redirect'
       - 'traefik.http.middlewares.https_redirect.redirectscheme.scheme=https'
       - 'traefik.http.middlewares.https_redirect.redirectscheme.permanent=true'
+  calibre:
+    hostname: calibre
+    build:
+        context: ./calibre
+    volumes:
+      - ./var/cache/pandoc:/tmp/pandoc
+    ports:
+      - 7654:7654
+    networks:
+      - default
+      - pontsun
 
   db:
     image: mariadb:10.10
