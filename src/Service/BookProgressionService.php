@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Entity\Book;
 use App\Entity\BookInteraction;
+use App\Entity\BookmarkUser;
 use App\Entity\User;
 use Doctrine\ORM\EntityManagerInterface;
 use Kiwilan\Ebook\Ebook;
@@ -16,6 +17,33 @@ class BookProgressionService
         private LoggerInterface $logger,
         private EntityManagerInterface $em,
     ) {
+    }
+
+    public function updateBookMarkFromProgressionAndCpi(Book $book, User $user, float $progress, ?string $cpi, ?float $sourcePercent = null): self
+    {
+        if ($cpi === null) {
+            return $this;
+        }
+
+        $nbPages = $this->processPageNumber($book);
+        if ($nbPages === null || $nbPages === 0) {
+            return $this;
+        }
+
+        $bookMark = $user->getBookmarkForBook($book);
+        if (!$bookMark instanceof BookmarkUser) {
+            $bookMark = new BookmarkUser($book, $user);
+            $this->em->persist($bookMark);
+            $user->addBookmarkUser($bookMark);
+        }
+
+        $bookMark->setPercent($progress);
+        $bookMark->setSourcePercent($sourcePercent);
+        $bookMark->setLocationValue('kobo.1.1');
+        $bookMark->setLocationType('KoboSpan');
+        $bookMark->setLocationSource($cpi);
+
+        return $this;
     }
 
     /**

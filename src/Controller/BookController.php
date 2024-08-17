@@ -328,16 +328,18 @@ class BookController extends AbstractController
     private function updateProgression(Request $request, Book $book, User $user): JsonResponse
     {
         try {
-            /** @var array{percent?:string|float, cfi?:string} $json */
+            /** @var array{percent?:string|float, cpi?:string} $json */
             $json = json_decode($request->getContent(), true, 512, JSON_THROW_ON_ERROR);
         } catch (\JsonException $e) {
             throw new BadRequestException('Invalid percent in json', 0, $e);
         }
         $percent = $json['percent'] ?? null;
+        $cpi = $json['cpi'] ?? null;
         $percent = $percent === null ? null : floatval((string) $percent);
 
         if ($percent !== null && $percent <= 1.0 && $percent >= 0) {
             $this->bookProgressionService->setProgression($book, $user, $percent)
+                ->updateBookMarkFromProgressionAndCpi($book, $user, $percent, $cpi)
                 ->flush();
 
             return new JsonResponse([
