@@ -6,7 +6,8 @@ use App\Entity\Book;
 use App\Entity\KoboDevice;
 use App\Exception\BookFileNotFound;
 use App\Kobo\ImageProcessor\CoverTransformer;
-use App\Kobo\Messenger\KepubifyMessage;
+use App\Kobo\Kepubify\KepubifyMessage;
+use App\Kobo\Response\MetadataResponseService;
 use App\Service\BookFileSystemManager;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -43,12 +44,12 @@ class DownloadHelper
         return $this->fileSystemManager->getCoverSize($book) ?? 0;
     }
 
-    public function getUrlForKoboDevice(Book $book, KoboDevice $kobo): string
+    public function getUrlForKoboDevice(Book $book, KoboDevice $kobo, string $extension): string
     {
         return $this->urlGenerator->generate('app_kobodownload', [
             'id' => $book->getId(),
             'accessKey' => $kobo->getAccessKey(),
-            'extension' => $book->getExtension(),
+            'extension' => $extension,
         ], UrlGeneratorInterface::ABSOLUTE_URL);
     }
 
@@ -90,27 +91,37 @@ class DownloadHelper
         return $response;
     }
 
-    public function getResponse(Book $book): Response
+    /**
+     * @throws NotFoundHttpException Book conversion failed
+     */
+    public function getResponse(Book $book, string $format): Response
     {
         $bookPath = $this->getBookFilename($book);
         if (false === $this->exists($book)) {
             throw new BookFileNotFound($bookPath);
         }
 
-        // Convert the file to kepub (Kobo's epub format) as a temporary file
-        $temporaryFile = $this->runKepubify($bookPath);
+        $temporaryFile = null;
+
+        if ($format === MetadataResponseService::KEPUB_FORMAT) {
+            $temporaryFile = $this->runKepubify($bookPath);
+            if ($temporaryFile === null) {
+                throw new NotFoundHttpException('The conversion to KEPUB failed');
+            }
+        }
+
         $fileToStream = $temporaryFile ?? $bookPath;
         $fileSize = filesize($fileToStream);
 
         $response = (new BinaryFileResponse($fileToStream, Response::HTTP_OK))
             ->deleteFileAfterSend($temporaryFile !== null);
 
-        $filename = $book->getBookFilename();
+        $filename = basename($book->getBookFilename(), $book->getExtension()).strtolower($format);
         $encodedFilename = rawurlencode($filename);
         $simpleName = rawurlencode(sprintf('book-%s-%s', $book->getId(), preg_replace('/[^a-zA-Z0-9\.\-_]/', '_', $filename)));
 
-        $response->headers->set('Content-Type', match (strtolower($book->getExtension())) {
-            'epub', 'epub3' => 'application/epub+zip',
+        $response->headers->set('Content-Type', match (strtoupper($format)) {
+            MetadataResponseService::KEPUB_FORMAT, MetadataResponseService::EPUB_FORMAT, MetadataResponseService::EPUB3_FORMAT => 'application/epub+zip',
             default => 'application/octet-stream'
         });
         $response->headers->set('Content-Disposition', HeaderUtils::makeDisposition(HeaderUtils::DISPOSITION_ATTACHMENT, $encodedFilename, $simpleName));

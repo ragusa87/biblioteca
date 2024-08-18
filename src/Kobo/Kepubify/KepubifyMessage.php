@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Kobo\Messenger;
+namespace App\Kobo\Kepubify;
 
 /**
  * Convert an ebook with kepubify binary

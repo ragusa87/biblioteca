@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Kobo\Messenger;
+namespace App\Kobo\Kepubify;
 
 use Psr\Log\LoggerInterface;
 use Symfony\Component\DependencyInjection\Attribute\Autowire;
@@ -17,15 +17,14 @@ class KepubifyMessageHandler
         #[Autowire(param: 'kernel.cache_dir')]
         private readonly string $cacheDir,
         private readonly LoggerInterface $logger,
-        #[Autowire(param: 'KEPUBIFY_BIN')]
-        private string $kepubifyBinary
+        private readonly KepubifyEnabler $kepubifyEnabler
     ) {
     }
 
     public function __invoke(KepubifyMessage $message): void
     {
         // Disable kepubify if the path is not set
-        if (trim($this->kepubifyBinary) === '') {
+        if (false === $this->kepubifyEnabler->isEnabled()) {
             return;
         }
 
@@ -38,7 +37,7 @@ class KepubifyMessageHandler
         }
 
         // Run the conversion
-        $process = new Process([$this->kepubifyBinary, '--output', $temporaryFile, $message->source]);
+        $process = new Process([$this->kepubifyEnabler->getKepubifyBinary(), '--output', $temporaryFile, $message->source]);
         $this->logger->debug('Run kepubify command: {command}', ['command' => $process->getCommandLine()]);
         $process->run();
 
