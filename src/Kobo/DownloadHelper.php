@@ -6,12 +6,15 @@ use App\Entity\Book;
 use App\Entity\KoboDevice;
 use App\Exception\BookFileNotFound;
 use App\Kobo\ImageProcessor\CoverTransformer;
+use App\Kobo\Messenger\KepubifyMessage;
 use App\Service\BookFileSystemManager;
 use Psr\Log\LoggerInterface;
+use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\HeaderUtils;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\StreamedResponse;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Messenger\MessageBusInterface;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 
 class DownloadHelper
@@ -20,8 +23,9 @@ class DownloadHelper
         private readonly BookFileSystemManager $fileSystemManager,
         private readonly CoverTransformer $coverTransformer,
         protected UrlGeneratorInterface $urlGenerator,
-        protected LoggerInterface $logger)
-    {
+        protected LoggerInterface $logger,
+        protected MessageBusInterface $messageBus
+    ) {
     }
 
     protected function getBookFilename(Book $book): string
@@ -86,15 +90,20 @@ class DownloadHelper
         return $response;
     }
 
-    public function getResponse(Book $book): StreamedResponse
+    public function getResponse(Book $book): Response
     {
         $bookPath = $this->getBookFilename($book);
         if (false === $this->exists($book)) {
             throw new BookFileNotFound($bookPath);
         }
-        $response = new StreamedResponse(function () use ($bookPath) {
-            readfile($bookPath);
-        }, Response::HTTP_OK);
+
+        // Convert the file to kepub (Kobo's epub format) as a temporary file
+        $temporaryFile = $this->runKepubify($bookPath);
+        $fileToStream = $temporaryFile ?? $bookPath;
+        $fileSize = filesize($fileToStream);
+
+        $response = (new BinaryFileResponse($fileToStream, Response::HTTP_OK))
+            ->deleteFileAfterSend($temporaryFile !== null);
 
         $filename = $book->getBookFilename();
         $encodedFilename = rawurlencode($filename);
@@ -104,10 +113,11 @@ class DownloadHelper
             'epub', 'epub3' => 'application/epub+zip',
             default => 'application/octet-stream'
         });
-        $response->headers->set('Content-Disposition',
-            sprintf('attachment; filename="%s"; filename*=UTF-8\'\'%s', $simpleName, $encodedFilename));
+        $response->headers->set('Content-Disposition', HeaderUtils::makeDisposition(HeaderUtils::DISPOSITION_ATTACHMENT, $encodedFilename, $simpleName));
 
-        $response->headers->set('Content-Length', (string) $this->getSize($book));
+        if ($fileSize !== false) {
+            $response->headers->set('Content-Length', (string) $fileSize);
+        }
 
         return $response;
     }
@@ -115,5 +125,13 @@ class DownloadHelper
     public function coverExist(Book $book): bool
     {
         return $this->fileSystemManager->coverExist($book);
+    }
+
+    private function runKepubify(string $bookPath): ?string
+    {
+        $conversionDto = new KepubifyMessage($bookPath);
+        $this->messageBus->dispatch($conversionDto);
+
+        return $conversionDto->destination;
     }
 }

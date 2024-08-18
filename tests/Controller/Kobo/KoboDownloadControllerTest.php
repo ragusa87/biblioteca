@@ -29,7 +29,7 @@ class KoboDownloadControllerTest extends AbstractKoboControllerTest
         self::assertResponseHeaderSame('Content-Type', 'application/epub+zip');
         self::assertResponseHasHeader('Content-Length');
 
-        $expectedDisposition = "attachment; filename=\"book-1-TheOdysses.epub\"; filename*=UTF-8''TheOdysses.epub";
+        $expectedDisposition = "attachment; filename=book-1-TheOdysses.epub; filename*=utf-8''TheOdysses.epub";
         self::assertResponseHeaderSame('Content-Disposition', $expectedDisposition, 'The Content-Disposition header is not as expected');
 
     }
