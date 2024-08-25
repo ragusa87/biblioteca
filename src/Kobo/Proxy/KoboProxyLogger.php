@@ -54,10 +54,14 @@ class KoboProxyLogger
 
     private function log(RequestInterface $request, ?ResponseInterface $response = null, ?\Throwable $error = null): void
     {
+        $body = $response?->getBody()->__toString();
+        $response?->getBody()->rewind();
+
         $this->logger->info(sprintf('Proxied: %s', (string) $request->getUri()), [
             'method' => $request->getMethod(),
             'status' => $response?->getStatusCode(),
             'token_hash' => md5($this->accessToken),
+            'body' => $body,
         ]);
 
         if ($error instanceof \Throwable) {

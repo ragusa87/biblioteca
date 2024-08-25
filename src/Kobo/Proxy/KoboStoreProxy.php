@@ -91,7 +91,11 @@ class KoboStoreProxy
         $psrRequest = $this->convertRequest($request, $hostname);
 
         $accessToken = $this->tokenExtractor->extractAccessToken($request) ?? 'unknown';
-        $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
+        $jar = new CookieJar();
+        if ($psrRequest instanceof ServerRequestInterface) {
+            $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
+        }
+
         $client = new Client();
         $psrResponse = $client->send($psrRequest, [
             'cookies' => $jar,
@@ -173,7 +177,10 @@ class KoboStoreProxy
         $accessToken = $this->tokenExtractor->extractAccessToken($request) ?? 'unknown';
 
         $client = new Client();
-        $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
+        $jar = new CookieJar();
+        if ($psrRequest instanceof ServerRequestInterface) {
+            $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
+        }
 
         return $client->sendAsync($psrRequest, [
             'cookies' => $jar,
