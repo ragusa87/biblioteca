@@ -4,6 +4,7 @@ namespace App\Kobo\Proxy;
 
 use App\Security\KoboTokenExtractor;
 use GuzzleHttp\Client;
+use GuzzleHttp\Cookie\CookieJar;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Promise\PromiseInterface;
 use Nyholm\Psr7\Factory\Psr17Factory;
@@ -90,9 +91,10 @@ class KoboStoreProxy
         $psrRequest = $this->convertRequest($request, $hostname);
 
         $accessToken = $this->tokenExtractor->extractAccessToken($request) ?? 'unknown';
-
+        $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
         $client = new Client();
         $psrResponse = $client->send($psrRequest, [
+            'cookies' => $jar,
             'base_uri' => $hostname,
             'handler' => $this->koboProxyLoggerFactory->createStack($accessToken),
             'http_errors' => false,
@@ -108,17 +110,21 @@ class KoboStoreProxy
         $psrRequest = $this->toPsrRequest($request);
         $hostname = $this->configuration->isImageHostUrl($psrRequest) ? $this->configuration->getImageApiUrl() : $this->configuration->getStoreApiUrl();
 
-        return $this->transformUrl($psrRequest, $hostname);
+        return $this->transformUrl($psrRequest, $hostname, $request->getScheme());
     }
 
-    private function transformUrl(ServerRequestInterface $psrRequest, string $hostname): UriInterface
+    private function transformUrl(ServerRequestInterface $psrRequest, string $hostname, string $scheme): UriInterface
     {
         $host = parse_url($hostname, PHP_URL_HOST);
         $host = $host === false ? $hostname : $host;
         $host = $host ?? $hostname;
         $path = $this->tokenExtractor->getOriginalPath($psrRequest, $psrRequest->getUri()->getPath());
 
-        return $psrRequest->getUri()->withHost($host)->withPath($path);
+        return $psrRequest->getUri()
+            ->withHost($host)
+            ->withPath($path)
+            ->withScheme($scheme)
+        ;
     }
 
     private function toPsrRequest(Request $request): ServerRequestInterface
@@ -126,7 +132,37 @@ class KoboStoreProxy
         $psr17Factory = new Psr17Factory();
         $psrHttpFactory = new PsrHttpFactory($psr17Factory, $psr17Factory, $psr17Factory, $psr17Factory);
 
-        return $psrHttpFactory->createRequest($request);
+        $request = clone $request;
+
+        // Remove server attributes
+        foreach ($request->server->all() as $key => $value) {
+            if ($key !== 'HTTPS' && $key !== 'X-Forwarded-Proto') {
+                $request->server->remove($key);
+            }
+        }
+
+        // Remove route attributes
+        foreach ($request->attributes->all() as $key => $value) {
+            $request->attributes->remove($key);
+        }
+
+        // Remove cookies
+        foreach ($request->cookies->all() as $key => $value) {
+            if (in_array($key, ['PHPSESSID', 'XDEBUG_SESSION'], true)) {
+                $request->cookies->remove($key);
+            }
+        }
+
+        // Remove headers
+        foreach ($request->headers->all() as $key => $value) {
+            if (str_starts_with($key, 'x-forwarded-') || $key === 'x-real-ip' || $key === 'cookie') {
+                $request->headers->remove($key);
+            }
+        }
+
+        return $psrHttpFactory->createRequest($request)
+            ->withCookieParams($request->cookies->all())
+        ;
     }
 
     public function proxyAsync(Request $request, bool $streamAllowed): PromiseInterface
@@ -137,8 +173,10 @@ class KoboStoreProxy
         $accessToken = $this->tokenExtractor->extractAccessToken($request) ?? 'unknown';
 
         $client = new Client();
+        $jar = CookieJar::fromArray($psrRequest->getCookieParams(), $psrRequest->getUri()->getHost());
 
         return $client->sendAsync($psrRequest, [
+            'cookies' => $jar,
             'base_uri' => $hostname,
             'handler' => $this->koboProxyLoggerFactory->createStack($accessToken),
             'http_errors' => false,
@@ -154,11 +192,10 @@ class KoboStoreProxy
         $host = parse_url($hostname, PHP_URL_HOST);
         $host = $host === false ? $hostname : $host;
         $request->headers->set('Host', $host);
-        $request->server->set('HTTPS', 'on'); // Force HTTPS (for cli)
         $psrRequest = $this->toPsrRequest($request);
         $psrRequest = $this->cleanup($psrRequest);
 
-        $url = $this->transformUrl($psrRequest, $hostname);
+        $url = $this->transformUrl($psrRequest, $hostname, $request->getScheme());
 
         return $psrRequest->withUri($url);
     }
