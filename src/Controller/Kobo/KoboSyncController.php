@@ -49,6 +49,10 @@ class KoboSyncController extends AbstractController
     #[Route('/v1/library/sync', name: 'api_endpoint_v1_library_sync')]
     public function apiEndpoint(KoboDevice $kobo, SyncToken $syncToken, Request $request): Response
     {
+        // if (true) {
+        //     return $this->koboStoreProxy->proxy($request);
+        // }
+
         $forced = $kobo->isForceSync() || $request->query->has('force');
         $count = $this->koboSyncedBookRepository->countByKoboDevice($kobo);
         if ($forced || $count === 0) {
