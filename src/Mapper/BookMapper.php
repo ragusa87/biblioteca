@@ -4,7 +4,6 @@ namespace App\Mapper;
 
 use App\Entity\Book;
 use App\Repository\BookRepository;
-use Biblioteca\TypesenseBundle\Mapper\FieldMapping;
 use Biblioteca\TypesenseBundle\Mapper\MapperInterface;
 use Biblioteca\TypesenseBundle\Mapper\Mapping;
 use Biblioteca\TypesenseBundle\Type\DataTypeEnum;
@@ -22,7 +21,7 @@ class BookMapper implements MapperInterface
         $mapping->
             add(
                 name: 'id',
-                type: DataTypeEnum::PRIMARY
+                type: DataTypeEnum::INT32
             )
             ->add(
                 name: 'title',
@@ -77,6 +76,7 @@ class BookMapper implements MapperInterface
 
         $query = $queryBuilder->getQuery();
 
+        /** @var Book $data */
         foreach ($query->toIterable() as $data) {
             yield $this->transform($data);
         }

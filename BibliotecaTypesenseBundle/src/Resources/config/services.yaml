@@ -13,7 +13,7 @@ services:
   Biblioteca\TypesenseBundle\Client\ClientInterface:
     factory: '@Biblioteca\TypesenseBundle\Client\ClientFactory'
 
-  Biblioteca\TypesenseBundle\PopulateService: ~
+  Biblioteca\TypesenseBundle\Populate\PopulateService: ~
 
   Biblioteca\TypesenseBundle\Mapper\MapperLocator:
     arguments:

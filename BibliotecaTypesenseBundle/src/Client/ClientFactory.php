@@ -9,7 +9,8 @@ class ClientFactory
 {
     public function __construct(
         private readonly string $uri,
-        #[\SensitiveParameter] private readonly string $apiKey,
+        #[\SensitiveParameter]
+        private readonly string $apiKey,
         private readonly int $connectionTimeoutSeconds = 5,
     ) {
     }

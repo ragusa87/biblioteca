@@ -4,7 +4,6 @@ namespace Biblioteca\TypesenseBundle\Type;
 
 enum DataTypeEnum: string
 {
-    case PRIMARY = 'primary';
     case STRING = 'string';
     case STRING_ARRAY = 'string[]';
     case INT32 = 'int32';

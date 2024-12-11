@@ -1,17 +1,20 @@
 <?php
 
-namespace Biblioteca\TypesenseBundle;
+namespace Biblioteca\TypesenseBundle\Populate;
 
 use Biblioteca\TypesenseBundle\Client\ClientInterface;
 use Biblioteca\TypesenseBundle\Mapper\FieldMappingInterface;
 use Biblioteca\TypesenseBundle\Mapper\MapperInterface;
 use Biblioteca\TypesenseBundle\Mapper\MappingInterface;
+use Http\Client\Exception;
 use Typesense\Collection;
+use Typesense\Exceptions\TypesenseClientError;
 
 class PopulateService
 {
     public function __construct(
         private readonly ClientInterface $client,
+        private readonly int $batchSize = 100,
         private readonly string $collectionPrefix = '',
     ) {
     }
@@ -26,16 +29,21 @@ class PopulateService
         }
     }
 
+    /**
+     * @throws Exception
+     * @throws TypesenseClientError
+     */
     public function createCollection(MapperInterface $mapper): Collection
     {
         $mapping = $mapper->getMapping();
         $name = $this->getMappingName($mapping);
 
-        $payload = [
+        $payload = array_filter([
             'name' => $name,
             'fields' => array_map(fn (FieldMappingInterface $mapping) => $mapping->toArray(), $mapping->getFields()),
+            'metadata' => $mapping->getMetadata() ? $mapping->getMetadata()?->toArray() : null,
             ...$mapping->getCollectionOptions()?->toArray() ?? [],
-        ];
+        ], fn ($value) => !is_null($value));
 
         $this->client->getCollections()->create($payload);
 
@@ -49,9 +57,9 @@ class PopulateService
 
         $collection = $this->client->getCollections()->offsetGet($name);
         $data = $mapper->getData();
-        foreach ($data as $item) {
-            $collection->documents->create($item);
-            yield $item;
+        foreach (new BatchGenerator($data, $this->batchSize) as $items) {
+            $collection->documents->import($items);
+            yield from $items;
         }
     }
 

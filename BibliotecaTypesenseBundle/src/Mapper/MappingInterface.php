@@ -12,4 +12,6 @@ interface MappingInterface
     public function getName(): string;
 
     public function getCollectionOptions(): ?CollectionOptionsInterface;
+
+    public function getMetadata(): ?MetadataMappingInterface;
 }

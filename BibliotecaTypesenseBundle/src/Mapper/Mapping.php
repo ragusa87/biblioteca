@@ -10,8 +10,9 @@ class Mapping implements MappingInterface
         private string $name,
         /** @var array<int, FieldMappingInterface> */
         private array $fields = [],
-        private readonly ?CollectionOptionsInterface $collectionOptions = null)
-    {
+        private readonly ?MetadataMappingInterface $metadata = null,
+        private readonly ?CollectionOptionsInterface $collectionOptions = null,
+    ) {
     }
 
     /**
@@ -44,5 +45,10 @@ class Mapping implements MappingInterface
     public function getCollectionOptions(): ?CollectionOptionsInterface
     {
         return $this->collectionOptions;
+    }
+
+    public function getMetadata(): ?MetadataMappingInterface
+    {
+        return $this->metadata;
     }
 }
