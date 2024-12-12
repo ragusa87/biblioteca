@@ -2,7 +2,7 @@
 
 namespace Biblioteca\TypesenseBundle\Query;
 
-interface SearchParameterInterface
+interface SearchQueryInterface
 {
     /**
      * @return array<string,mixed>

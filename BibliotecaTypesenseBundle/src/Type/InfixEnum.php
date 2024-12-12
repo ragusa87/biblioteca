@@ -1,6 +1,6 @@
 <?php
 
-namespace Biblioteca\TypesenseBundle\Query;
+namespace Biblioteca\TypesenseBundle\Type;
 
 enum InfixEnum: string
 {

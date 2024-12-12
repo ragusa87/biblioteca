@@ -2,7 +2,9 @@
 
 namespace Biblioteca\TypesenseBundle\Query;
 
-class SearchParameter implements SearchParameterInterface
+use Biblioteca\TypesenseBundle\Type\InfixEnum;
+
+class SearchQuery implements SearchQueryInterface
 {
     private readonly ?string $infix;
     /**
