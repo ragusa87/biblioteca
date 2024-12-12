@@ -64,8 +64,10 @@ class TypesensePopulateCommand extends Command
             }
             $progress->clear();
 
-            $io->writeln(sprintf('Aliasing collection %s to %s', $name, $mapper->getMapping()->getName()));
-            $this->aliasName->switch($mapper->getMapping(), $name);
+            if ($this->aliasName->isAliasEnabled()) {
+                $io->writeln(sprintf('Aliasing collection %s to %s', $name, $mapper->getMapping()->getName()));
+                $this->aliasName->switch($mapper->getMapping(), $name);
+            }
 
             $progress->clear();
         }
