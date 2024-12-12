@@ -19,6 +19,8 @@ services:
     arguments:
       $mappers: !tagged typesense.mapper
 
+  Biblioteca\TypesenseBundle\CollectionName\AliasName: ~
+
   Biblioteca\TypesenseBundle\Command\:
     resource: '../../Command/'
     tags: ['console.command']

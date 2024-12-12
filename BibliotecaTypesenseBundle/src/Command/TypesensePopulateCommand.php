@@ -2,6 +2,7 @@
 
 namespace Biblioteca\TypesenseBundle\Command;
 
+use Biblioteca\TypesenseBundle\CollectionName\AliasName;
 use Biblioteca\TypesenseBundle\Mapper\MapperInterface;
 use Biblioteca\TypesenseBundle\Mapper\MapperLocator;
 use Biblioteca\TypesenseBundle\Populate\PopulateService;
@@ -21,6 +22,7 @@ class TypesensePopulateCommand extends Command
     public function __construct(
         private PopulateService $populateService,
         private MapperLocator $mapperLocator,
+        private AliasName $aliasName,
     ) {
         parent::__construct();
     }
@@ -43,18 +45,28 @@ class TypesensePopulateCommand extends Command
         $progress = new ProgressBar($output, 0);
 
         foreach ($this->mapperLocator->getMappers() as $mapper) {
-            $name = $mapper->getMapping()->getName();
-            $io->writeln('Deleting collection '.$name);
-            $this->populateService->deleteCollection($mapper);
+            $name = $this->aliasName->getName($mapper->getMapping()->getName());
 
             $io->writeln('Creating collection '.$name);
-            $this->populateService->createCollection($mapper);
+            $this->populateService->createCollection($name, $mapper);
 
-            $io->writeln('Filling collection '.$name);
-            $progress->start($mapper->getDataCount());
-            foreach ($this->populateService->fillCollection($mapper) as $_) {
-                $progress->advance();
+            try {
+                $io->writeln('Filling collection '.$name);
+                $progress->start($mapper->getDataCount());
+                foreach ($this->populateService->fillCollection($name, $mapper) as $_) {
+                    $progress->advance();
+                }
+            } catch (\Exception $e) {
+                $io->error($e->getMessage());
+                $this->populateService->deleteCollection($name);
+            } finally {
+                $progress->finish();
             }
+            $progress->clear();
+
+            $io->writeln(sprintf('Aliasing collection %s to %s', $name, $mapper->getMapping()->getName()));
+            $this->aliasName->switch($mapper->getMapping(), $name);
+
             $progress->clear();
         }
         $progress->finish();
