@@ -2,42 +2,53 @@
 
 namespace App\Service\Search;
 
-use ACSEO\TypesenseBundle\Finder\CollectionFinder;
-use ACSEO\TypesenseBundle\Finder\TypesenseQuery;
-use ACSEO\TypesenseBundle\Finder\TypesenseResponse;
 use App\Ai\Communicator\AiAction;
 use App\Ai\Communicator\AiCommunicatorInterface;
 use App\Ai\Communicator\CommunicatorDefiner;
 use App\Ai\Prompt\SearchHintPrompt;
 use App\Entity\Book;
+use Biblioteca\TypesenseBundle\Query\SearchQuery;
+use Biblioteca\TypesenseBundle\Search\Results\SearchResultsHydrated;
+use Biblioteca\TypesenseBundle\Search\SearchCollectionInterface;
 
 class SearchHelper
 {
-    private TypesenseResponse $response;
-    public TypesenseQuery $query;
+    /** @var ?SearchResultsHydrated<Book> */
+    public ?SearchResultsHydrated $response = null;
+    public ?SearchQuery $query = null;
+    public int $maxFacetValues = 10;
 
-    public function __construct(protected CollectionFinder $bookFinder, private readonly CommunicatorDefiner $communicatorDefiner)
+    /**
+     * @param SearchCollectionInterface<Book> $searchBooks
+     */
+    public function __construct(protected SearchCollectionInterface $searchBooks, private readonly CommunicatorDefiner $communicatorDefiner)
     {
     }
 
     public function prepareQuery(string $queryBy, ?string $filterBy = null, ?string $sortBy = null, int $perPage = 16, int $page = 1): SearchHelper
     {
-        $query = new TypesenseQuery($queryBy, 'title,serie,extension,authors,tags,summary');
-        $query->perPage($perPage);
-        $query->filterBy($filterBy ?? '');
-        $query->sortBy($sortBy ?? '');
-        $query->numTypos(2);
-        $query->page($page);
-        $query->facetBy('authors,serie,tags');
-        $query->addParameter('facet_strategy', 'exhaustive');
-        $this->query = $query;
+        // TODO this->maxFacetValues;
+        $this->query = new SearchQuery(
+            q: $queryBy,
+            queryBy: 'title,serie,extension,authors,tags,summary',
+            filterBy: $filterBy,
+            sortBy: $sortBy,
+            facetBy: 'authors,serie,tags',
+            numTypos: 2,
+            page: $page,
+            perPage: $perPage,
+            // TODO  addParameter('facet_strategy', 'exhaustive');
+        );
 
         return $this;
     }
 
     public function execute(): SearchHelper
     {
-        $this->response = $this->bookFinder->query($this->query);
+        if (!$this->query instanceof SearchQuery) {
+            return $this;
+        }
+        $this->response = $this->searchBooks->search($this->query);
 
         return $this;
     }
@@ -47,47 +58,58 @@ class SearchHelper
      */
     public function getBooks(): array
     {
-        $results = $this->response->getResults();
-
-        $books = [];
-        foreach ($results as $resultItem) {
-            $books[$resultItem->getId()] = $resultItem;
+        if (null == $this->response) {
+            return [];
         }
 
-        return $books;
+        return iterator_to_array($this->response->getIterator());
     }
 
     public function getFacets(): array
     {
+        if (!$this->response instanceof SearchResultsHydrated) {
+            return [];
+        }
+
         return $this->response->getFacetCounts();
     }
 
     public function getPagination(): array
     {
-        $found = $this->response->getFound();
-        $params = $this->query->getParameters();
+        if (!$this->response instanceof SearchResultsHydrated) {
+            return [
+                'page' => 1,
+                'total' => 0,
+                'lastPage' => 1,
+                'nextPage' => null,
+                'previousPage' => null,
+            ];
+        }
 
-        $pages = ceil($found / $params['per_page']);
+        $found = $this->response->found();
+        $perPage = $this->query?->toArray()['per_page'] ?? 1; // TODO read response['request_params']['per_page'] ?
+        $lastPage = ceil($found / max($perPage, 1));
 
         return [
-            'page' => $params['page'],
-            'pages' => $pages,
-            'perPage' => $params['per_page'],
-            'total' => $found,
-            'lastPage' => $pages,
-            'nextPage' => $params['page'] < $pages ? $params['page'] + 1 : null,
-            'previousPage' => $params['page'] > 1 ? $params['page'] - 1 : null,
+            'page' => $this->response->getPage(),
+            'pages' => $this->response->getTotalPage(),
+            'perPage' => $perPage,
+            'total' => $this->response->found(),
+            'lastPage' => $lastPage,
+            'nextPage' => $this->response->getPage() < $lastPage ? ($this->response->getPage() ?? 1) + 1 : null,
+            'previousPage' => $this->response->getPage() > 1 ? $this->response->getPage() - 1 : null,
         ];
     }
 
     public function getQueryHints(): ?array
     {
         $communicator = $this->communicatorDefiner->getCommunicator(AiAction::Search);
-        if (!$communicator instanceof AiCommunicatorInterface) {
+        if (!$communicator instanceof AiCommunicatorInterface || !$this->query instanceof SearchQuery) {
             return null;
         }
-        $params = $this->query->getParameters();
-        if ($params['q'] === '') {
+
+        $q = $this->query->toArray()['q']; // TODO Add query helper ?
+        if ($q === '') {
             return null;
         }
 
@@ -103,7 +125,7 @@ class SearchHelper
         $communicator->initialise($communicator->getAiModel());
 
         $prompt->setPrompt('### User-Supplied Query ###
-'.$params['q']);
+'.$q);
         $result = $communicator->interrogate($prompt->getPrompt());
 
         return $prompt->convertResult($result);
