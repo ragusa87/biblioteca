@@ -159,10 +159,12 @@ when@test:
         App\Tests\Mock\AbstractApiMock: ~
 
         App\Ai\Communicator\OllamaCommunicator:
+            autoconfigure: true
             arguments:
                 $client: '@App\Tests\Mock\AbstractApiMock'
 
         App\Ai\Communicator\OpenAiCommunicator:
+            autoconfigure: true
             arguments:
                 $client: '@App\Tests\Mock\AbstractApiMock'
 
