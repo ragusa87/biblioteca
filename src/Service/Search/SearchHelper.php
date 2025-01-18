@@ -25,11 +25,11 @@ class SearchHelper
     {
     }
 
-    public function prepareQuery(string $queryBy, ?string $filterBy = null, ?string $sortBy = null, int $perPage = 16, int $page = 1): SearchHelper
+    public function prepareQuery(string $q, ?string $filterBy = null, ?string $sortBy = null, int $perPage = 16, int $page = 1): SearchHelper
     {
         // TODO this->maxFacetValues;
         $this->query = new SearchQuery(
-            q: $queryBy,
+            q: $q,
             queryBy: 'title,serie,extension,authors,tags,summary',
             filterBy: $filterBy,
             sortBy: $sortBy,
